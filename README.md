@@ -1,0 +1,3 @@
+- [Linux notes](/linux)
+- [Plumbing](plumbing)
+- [Interesting things](interesting_things.md)
