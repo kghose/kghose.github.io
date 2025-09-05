@@ -21,7 +21,7 @@
 
 
 [Charles McNair CNN opinion piece on the miracle of vaccines](https://www.cnn.com/2020/04/09/opinions/seeking-vaccine-for-coronavirus-as-with-polio-epidemic-mcnair/index.html) - I found it notable because the author describes how his aunt was stricken by polio, lost use of her diaphragm, was in an iron lung for three months, and then recovered partially.   
-</ul>
+
 
 
 
@@ -39,7 +39,7 @@
 
 
 [TV backlight compensation](http://www.lofibucket.com/articles/tv_backlight_compensation.html) - Pekka Väänänen's second hand TV backlight's red LEDs were failing in a splotchy pattern across the screen. He fixed it in an ingenious manner. It was also fun to learn of the [MPC-BE video player](http://forum.doom9.org/showthread.php?t=165890) which supports live shader editing.
-</ul>
+
 
 
 
@@ -48,11 +48,11 @@
 
 
 
-[First million integers represented in 2D projection of a much larger prime factor based space](https://johnhw.github.io/umap_primes/index.md.html). -&nbsp;the first million integers, represented as binary vectors indicating their prime factors, and laid out using the&nbsp;[UMAP dimensionality reduction algorithm](https://github.com/lmcinnes/umap)&nbsp;by Leland Mcinnes. Each integer is represented in a high-dimensional space, and gets squished down to 2D so that numbers with similar prime factorisations are closer together than those with dissimilar factorisations. (johnhw)
+[First million integers represented in 2D projection of a much larger prime factor based space](https://johnhw.github.io/umap_primes/index.md.html). - the first million integers, represented as binary vectors indicating their prime factors, and laid out using the [UMAP dimensionality reduction algorithm](https://github.com/lmcinnes/umap) by Leland Mcinnes. Each integer is represented in a high-dimensional space, and gets squished down to 2D so that numbers with similar prime factorisations are closer together than those with dissimilar factorisations. (johnhw)
 
 
 
- <a style="font-size:inherit" href="https://www.gamasutra.com/view/feature/131503/1500_archers_on_a_288_network_.php?print=1">1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond</a><span style="font-size:inherit"> - An engaging writeup on the design on a multiplayer RTS game in ye olde times of bottle necked machines and networks.</span> 
+ [1500 Archers on a 28.8: Network Programming in Age of Empires and Beyond](https://www.gamasutra.com/view/feature/131503/1500_archers_on_a_288_network_.php?print=1) - An engaging writeup on the design on a multiplayer RTS game in ye olde times of bottle necked machines and networks. 
 
 
 
@@ -92,7 +92,7 @@
 
 
 
-[Spikey spheres](http://www.solipsys.co.uk/new/SpikeySpheres.html?HN_20161120)&nbsp;- and interesting take on the curse of dimensionality and properties of higher dimensional spaces&nbsp;([lobste.rs](https://lobste.rs/s/dzpi3p/spikey_spheres))
+[Spikey spheres](http://www.solipsys.co.uk/new/SpikeySpheres.html?HN_20161120) - and interesting take on the curse of dimensionality and properties of higher dimensional spaces ([lobste.rs](https://lobste.rs/s/dzpi3p/spikey_spheres))
 
 
 
@@ -140,8 +140,10 @@ A nice tutorial on [Kalman filters](http://www.anuncommonlab.com/articles/how-ka
 
 
 
-A simple generative function for [Fibonacci numbers](https://paulhankin.github.io/Fibonacci/). <pre><code><span class="p">(4</span> <span class="o">&lt;&lt;</span> <span class="n">n*(3+n))</span> <span class="o">//</span> <span class="p">((4</span> <span class="o">&lt;&lt;</span> <span class="mi">2*n)</span> <span class="o">-</span> <span class="p">(2</span> <span class="o">&lt;&lt;</span> <span class="n">n)</span> <span class="o">-</span> <span class="mi">1)</span> <span class="o">&amp;</span> <span class="p">((2</span> <span class="o">&lt;&lt;</span> <span class="n">n)</span> <span class="o">-</span> <span class="mi">1)</span></code></pre> 
-
+A simple generative function for [Fibonacci numbers](https://paulhankin.github.io/Fibonacci/):
+```
+(4 << n*(3+n)) // ((4 << 2*n) - (2 << n) - 1) & ((2 << n) - 1)
+```
 
 
 "[Graphical algebra](https://acko.net/files/gltalks/toolsforthought)" interesting algebraic/trigonometric concepts lovingly described using animations of graphs. From the author of acko.net
@@ -184,7 +186,7 @@ Add up the sine waves. Fun interactive [fourier explorer](http://toxicdump.org/s
 
 
 
-An [entertaining account](http://www.otherhand.org/home-page/physics/graduate-studies-in-physics-at-cal-state-university-fullerton/)&nbsp;by Tom Mahood, of his work with James Woodward, testing an inertial drive.
+An [entertaining account](http://www.otherhand.org/home-page/physics/graduate-studies-in-physics-at-cal-state-university-fullerton/) by Tom Mahood, of his work with James Woodward, testing an inertial drive.
 
 
 
@@ -217,4 +219,4 @@ A [very good article](http://danluu.com/malloc-tutorial/) on how malloc and co w
 
 
 [The black box that pumps out primes](http://bit-player.org/2015/pumping-the-primes). (And a related [paper](https://cs.uwaterloo.ca/journals/JIS/VOL11/Rowland/rowland21.html) about a simple prime number generating formula)
-</ul>
+
