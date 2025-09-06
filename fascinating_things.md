@@ -8,7 +8,7 @@
 
 
 
-[All Circuits are Busy Now: The 1990 AT&amp;T Long Distance Network Collapse](https://users.csc.calpoly.edu/~jdalbey/SWE/Papers/att_collapse) (Dennis Burke)
+[All Circuits are Busy Now: The 1990 AT&T Long Distance Network Collapse](https://users.csc.calpoly.edu/~jdalbey/SWE/Papers/att_collapse) (Dennis Burke)
 
 
 
