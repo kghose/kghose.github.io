@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Plumbing notes"
+permalink: /plumbing
+---
+
 # Threaded joints (NPT - national pipe thread)
 
 (Wisdom from the [ISM blog][threaded joints])
