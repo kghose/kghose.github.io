@@ -4,7 +4,9 @@ title: "Plumbing notes"
 permalink: /plumbing
 ---
 
-# Threaded joints (NPT - national pipe thread)
+# Plumbing notes
+
+## Threaded joints (NPT - national pipe thread)
 
 (Wisdom from the [ISM blog][threaded joints])
 
@@ -15,7 +17,7 @@ permalink: /plumbing
 4. **Wrench tighten 1.5 to 3 turns beyond.**
 
 
-## Positioning elbows
+### Positioning elbows
 
 Because of the range you have (1.5 to 3 wrench tighten turns) you have at least
 one full turn to adjust elbows. It mostly works. You can add thicker tape in
@@ -23,11 +25,10 @@ cases where it doesn't. **Do not untighten. If you do, redo the whole thing with
 fresh tape.**
 
 
-
 [threaded joints]: https://www.industrialspec.com/about-us/blog/detail/npt-nptf-tapered-threads-and-leakproof-seals
 
 
-# Removing PEX B from fittings
+## Removing PEX B from fittings
 
 PEX B deforms after being clamped/cinched around a fitting. Even after removing
 a clamp the PEX B will remain in place. While it is possible to slit the PEX at
@@ -37,7 +38,7 @@ hair dryer or a heat gun for 30sec to 1min and then wriggle the PEX section off
 the fitting.
 
 
-# Removing PEX B cinch clamps
+## Removing PEX B cinch clamps
 
 Use a flathead screw driver to pry up the end of the strap. Then use pliers to
 peel off the strap from the three nubs that holds the ring together. The cinch
