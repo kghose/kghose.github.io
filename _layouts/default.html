@@ -30,12 +30,12 @@
             </section>
           {% endif %}
 
-          {% include breadcrumbs.html omit_home=true omit_date=true %}
         </header>
     </div>
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
+      {% include breadcrumbs.html omit_date=true %}
       <section id="main_content" class="inner">
         {{ content }}
       </section>
