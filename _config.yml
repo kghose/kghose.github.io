@@ -1,1 +1,2 @@
-
+kramdown:
+  auto_ids: true
