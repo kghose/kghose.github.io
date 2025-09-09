@@ -1,6 +1,6 @@
 theme: jekyll-theme-slate
-title: Pages from the fire
-description: I was voted most likely to set it on fire. Here are some of my notes.
+title: Notes from the fire
+description: There was never any fire but here are the notes.
 
 kramdown:
   auto_ids: true
