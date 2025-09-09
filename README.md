@@ -1,3 +1,4 @@
 - [Linux notes](/linux)
-- [Plumbing](plumbing)
+- [Plumbing notes](plumbing)
 - [Fascinating things](fascinating_things.html)
+- [Home projects](diy)
