@@ -336,19 +336,27 @@ I know what you're thinking. "Did he make two turns after finger tight, or only
 one?" Well to tell you the truth in all this excitement I kinda lost track
 myself.
 
-I keep tightening till I'm worried that I'm stripping threads. Or at least till
-I'm afraid one of my wrenches is going to slip and bang one of the gazillion
-pipes in this corner. The water keeps oozing out of the teflon tape like little
+I keep tightening but the water keeps oozing out of the teflon tape like little
 fish eggs.
 
-I'll have to redo the threaded joint. Because there is so little space, I'll
-have to disconnect the U to do this. Nominally I only have to remove the PEX
-clamp holding the last section of the U to the threaded elbow to free up the
+Then I have to stop because I won't make it all the way to a full turn with the
+U connected because of the cramped space, and because it's getting so tight that
+I'm not confident I _can_ make it another full turn even without the U
+interfering.
+
+I don't want to end up with the U pointing down because then, if I _have_ to
+drain the pipe for some reason, I won't be able to get all the water out
+
+I have to redo the threaded joint, perhaps with more layers of teflon to get it
+tighter so I can stop with the U pointing up.
+
+I'll have to disconnect the U to do this. Nominally I only have to remove the
+PEX clamp holding the last section of the U to the threaded elbow to free up the
 elbow so I can repack it and retighten it.
 
 In practice I'll have to get rid of that entire section of pipe because the pipe
 deforms under the clamp and I don't want to risk reusing it. So I'd have to
-remove the clamp on the elbow before that too.
+remove the clamp on the elbow before that as well.
 
 It's about this point that I begin to feel burnt out. Like most DIY people I
 am doing this late at night when all other duties are done, and I was starting
