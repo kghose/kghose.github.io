@@ -1,7 +1,11 @@
 {% assign crumbs = page.url | split: '/' %}
-{% for crumb in crumbs %}
+{% for crumb in crumbs |  %}
   {% if forloop.first %}
     <a href="/">Home</a> 
+    {% continue %}
+  {% endif %}
+  
+  {% if forloop.last %}
     {% continue %}
   {% endif %}
 
