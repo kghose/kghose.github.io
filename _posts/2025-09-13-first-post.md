@@ -2,7 +2,7 @@
 layout: post
 title: "Experimenting with blog posts on GH pages."
 date: 2025-09-13
-categories: meta
+tags: meta
 ---
 
 
