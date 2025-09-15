@@ -1,0 +1,30 @@
+body {
+  font-family: Helvetica;
+  width: 500px;
+  margin: 0 auto; // Center the content
+}
+
+#site_title {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px;
+
+    a {
+      color: white;
+  text-decoration: none;
+}
+}
+
+#breadcrumbs {
+    color: black;
+    background-color: lightblue;
+    text-decoration: none;
+    padding-left: 10px;
+
+    a {
+    color: black;
+    background-color: lightblue;
+    text-decoration: none;
+    }
+}
