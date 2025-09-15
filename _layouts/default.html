@@ -10,16 +10,11 @@
   </head>
 
   <body>
-    <div id="header">
-      <h1 id="site_title"><a href="/">{{ site.title }}</a></h1>
+    <div id="site_title">
+      <a href="/">{{ site.title }}</a>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
-    </div>
+    {{ content }}
 
   </body>
 </html>
