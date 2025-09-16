@@ -6,4 +6,11 @@ layout: default
 {% include breadcrumbs.html %}
 </div>
 
+<div id="datebar">
+{% if page.last_modified_at %}
+Last updated: {{ page.last_modified_at }}</br>
+{% endif %}
+</div>
+
 {{ content }}
+
