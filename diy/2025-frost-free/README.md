@@ -1,3 +1,8 @@
+---
+permalink: /diy/2025-frost-free
+last_modified_at: 2025-09-08
+---
+
 # Upgrading to frost free sillcocks
 
 Both front and rear hosebibs are leaking from the valve stem. Let's take this
@@ -379,9 +384,9 @@ I learn how to [remove a cinch clamp] and figure out that a hair dryer is
 the simplest and least unpredictable way of [removing the pipe] from the fitting
 afterwards.
 
-[threaded joints]: /plumbing#threaded-joints
-[remove a cinch clamp]: /plumbing#remove-pex-b-cinch-clamps
-[removing the pipe]: /plumbing#remove-pex-b-from-fittings
+[threaded joints]: /diy/plumbing_notes#threaded-joints
+[remove a cinch clamp]: /diy/plumbing_notes#remove-pex-b-cinch-clamps
+[removing the pipe]: /diy/plumbing_notes#remove-pex-b-from-fittings
 
 I’m learning new stuff and kicking ass. I’m back in a growth mindset and in a
 good mood. It is true that you learn the most from making mistakes. I just
