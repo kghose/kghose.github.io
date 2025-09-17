@@ -1,4 +1,10 @@
-- [Linux notes](/linux-tips)
-- [Plumbing notes](plumbing)
-- [Fascinating things](fascinating_things.html)
-- [Home projects](diy)
+## Pages
+
+[Linux notes](linux-tips)\
+[Fascinating things](fascinating_things.html)\
+[Home projects (and notes)](diy)
+
+## Posts
+
+{% include blog.html %}
+

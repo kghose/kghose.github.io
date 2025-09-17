@@ -1,8 +1,14 @@
+---
+layout: page
+title: Home Projects
+permalink: diy/
+--- 
+
 # Home Projects
 
 ## Notes
 - [Drills vs Impact drivers]({% link diy/notes/impact.md %})
-- [Plumbing notes]({% link diy/notes/plumbing.md %})
+- [Plumbing notes](/diy/plumbing_notes)
 
 ## Projects
 - [Upgrading to frost free sillcocks](2025-frost-free)
