@@ -1,8 +1,20 @@
 ---
-last_modified_at: 2025-09-16
+last_modified_at: 2025-09-19
 ---
 
 # Drills vs impact drivers
+
+**Drill/driver:**
+
+1. With clutch disengaged: Drill holes
+1. With suitable clutch setting: Small screws into delicate materials
+
+**Impact driver:**
+
+1. Drive screws into hard material we are not afraid of stripping
+1. Drill holes: They have special bits that fit in the 1/4" collet and can deal
+   with the impacts.
+
 
 ## Drill
 
@@ -32,6 +44,14 @@ get the job done. Once the screw is snug, if we try to torque it further, the
 clutch will slip, making the characteristic rapping noise, preventing us from
 over tightening the screw. 
 
+## Hammer drill
+
+These have a mass inside that repeatedly knocks the drill bit into the material
+like a hammer. Most drills have a mode setting to switch this on or off. The
+hammering breaks up hard but brittle material like concrete or stone, making
+drilling holes into such material faster than a regular drill.  
+
+
 ## Impact driver
 
 An impact driver is designed to drive long screws into thick wood. Say we have a
@@ -54,18 +74,6 @@ We need specially designed bits for an impact driver that do better with these
 sudden torque spikes. The claim is that regular bits used by drill/drivers
 are more likely to fatigue and break with impact drivers. These bits have a
 narrower neck which twists slightly and smoothens out the torque spike. 
-
-## Appropriate uses
-
-**Drilling holes**: Drill with clutch disengaged\
-**Driving small screws into delicate materials**: Drill with low clutch setting\
-**Driving screws into hard material we are not afraid of stripping**: Impact
-driver
-
-### Off brand uses
-
-**Drilling holes with an impact driver**: They do sell drill bits for that and I
-suppose you get more torque but I haven't done it.
 
 
 ## Impact driver mechanism 
