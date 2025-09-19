@@ -78,9 +78,15 @@ narrower neck which twists slightly and smoothens out the torque spike.
 
 ## Impact driver mechanism 
 
-How can an Impact driver deliver more torque without using a physically bigger
-and heavier motor that draws more current which needs a larger battery (if
-cordless)?
+How can an Impact driver deliver more torque without using a physically 
+more powerful motor?
+
+
+[![](impact-driver-patent-1932.jpg)](impact-driver-patent-1932.jpg)
+
+(The image above is from [US patent
+2012916](https://patents.google.com/patent/US2012916A/en), "Impact tool",
+awarded to Robert H Pott in 1932)
 
 The impact driver motor doesn't directly drive the bit. It drives a heavy
 cylinder that acts a bit like a clutch and a bit like a flywheel. This driver
