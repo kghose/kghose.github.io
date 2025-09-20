@@ -1,16 +1,12 @@
 # Run the site locally with Podman
 
-(From 
+(Adapted from 
 https://talk.jekyllrb.com/t/local-testing-of-existing-github-jekyll-site/7459/4)
 
-```
-# From the root directory
-podman build --tag gh-pages .
-podman run -it --rm --volume="$PWD:/srv/jekyll:Z" -w /srv/jekyll -p 4000:4000 gh-pages /bin/sh
+1. If you need to build the image, from the project root directory run `podman 
+   build --tag gh-pages .`
+1. `podman run -it --rm --volume="$PWD:/srv/jekyll:Z" -w /srv/jekyll -p 4000:4000 gh-pages /bin/sh -c "bundle exec jekyll serve --livereload --host 0.0.0.0"`
 
-# In the container
-# bundle install may be needed before
-bundle exec jekyll serve --livereload --host 0.0.0.0
+   `bundle install` may be needed for the first time run. 
 
-# The site is live at http://localhost:4000
-```
+The site is live at http://localhost:4000
