@@ -52,6 +52,19 @@
 | `pdfjam <input file> <page ranges> -o <output file>` | Extract pages from pdf|
 
 
+# Make a bootable USB from an iso image
+
+(Use it for booting Linux, updating firmware, anything where a bootable iso
+image is supplied)
+
+1. Plug in the USB drive
+1. Find which device the drive is labeled as using  `lsblk`. say it's `/dev/sda`
+1. Use `dd` to create a bootable USB\
+ `dd if=linuxmint-22.1-xfce-64bit.iso of=/dev/sda1 bs=8M status=progress &&
+ sync`\
+ The `sync` at the end ensures all the data is written to the drive.
+ `status=progress` is nice to get an indication nothing's frozen up.  
+
 
 # mDNS: Local hostname resolution
 
@@ -136,4 +149,22 @@ flatpak run org.mozilla.firefox
 ```
 flatpak info --show-permissions org.mozilla.firefox
 ```
+
+
+# Upgrading firmware (Thinkpads)
+
+[fwup] is the easiest but may not have the most up to date firmware from the
+manufacturer. Follow the [basic usage
+flow](https://github.com/fwupd/fwupd?tab=readme-ov-file#basic-usage-flow-command-line)
+described on the project page.
+
+```
+fwupdmgr get-updates
+fwupdmgr update
+```
+
+[fwup]: https://github.com/fwupd/fwupd
+
+Manufacturers may put out a bootable image. You can use `dd` to create a
+bootable USB (steps are noted on this page). 
 
