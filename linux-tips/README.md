@@ -8,17 +8,18 @@ permalink: /linux-tips
 
 # Linux Command reference
 
-Commandline options kernel was started with: 
+Commandline options kernel was started with
 ```
 cat /proc/cmdline
 ```  
 
-Distribution version details:
+Distribution version details
 ```
 lsb_release -a
 ```
 
-Kernel details:
+
+Kernel details
 ```
 uname -a
 ```
@@ -40,8 +41,7 @@ System log (add `-no-tail` when piping to something)
 journalctl --system -S "2024-03-22 14:00"
 ``` 
 
-
-Get display details 
+Get display details
 ```
 edid-decode /sys/class/drm/card0-eDP-1/edid
 ```
@@ -102,19 +102,18 @@ sudo systemctl start <service name>
 sudo systemctl stop <service name>
 ```
 
+System sleep. Look in [this file][pmi_ss] for details.
 
-Sleep mode details 
+[pmi_ss]: https://www.kernel.org/doc/Documentation/power/interface.txt
+
 ```
+cat /sys/power/state
 cat /sys/power/mem_sleep
-```
-
-What the kernel should do after creating a hibernation image 
-```
 cat /sys/power/disk
 ```
 
-
-Mask sleep states
+Mask (disable) particular sleep states.
+Use `unmask` to reenable.
 ```
 sudo systemctl mask \
 hibernate.target hybrid-sleep.target
@@ -132,7 +131,7 @@ List all available printers
 lpstat -pa
 ```
 
-List current jobs
+List current printer jobs
 ```
 lpstat
 ```
@@ -141,7 +140,7 @@ Output will be of the form
 ```
 Brother_HL_L2300-181  kg  165888   Sun 21 Sep 2025 07:48:03 PM EDT
 ```
-Here the `-181` is the job number/
+Here the `-181` is the job number.
 
 Remove a print job
 ```
@@ -191,8 +190,6 @@ avahi-resolve-address 192.168.8.1
 getent hosts 192.168.8.1
 ```
  
-
-
 Show details (including size) of a package 
 ```
 apt show <package name>
@@ -210,86 +207,81 @@ Trace route to host
 mtr 8.8.8.8
 ```
 
-
+List directory contents recursively
 ```
 ls -R
 ```
- List directory contents recursively 
 
-
+Redirect stdout of `cmd` to `std.out` and stderr to `std.err
 ```
 cmd > std.out 2> std.err
 ```
- Redirect stdout of `cmd` to `std.out` and stderr to `std.err
-```
 
-
+Redirect stdout and stderr to `out.txt
 ```
 cmd 2> out.txt
 ```
- Redirect stdout and stderr to `out.txt
-```
 
-
+Size of directory 
 ```
 du -sh <directory>
 ```
- Size of directory 
 
 
+Used and free sizes of all mount points 
 ```
 df -H
 ```
- Used and free sizes of all mount points 
 
 
+Find and print all empty directories 
 ```
 find . -type d -empty -print
 ```
- Find and print all empty directories 
 
 
+Delete all empty directories 
 ```
 find . -type d -empty -delete`
- Delete all empty directories 
+```
 
-
+Find and print all files with given extension 
 ```
 find Takeout -name "*.json" -type f -print
 ```
- Find and print all files with given extension 
 
 
+Measuring bandwidth with [iPerf3](iperf.fr).
+
+Start iperf3 server on target machine "hostname" 
 ```
 iperf3 -s
 ```
- Start [iperf3]() server on target machine "hostname" 
 
 
+Connect to "hostname" and determine speed of connection 
 ```
 iperf3 -c hostname
 ```
- connect to "hostname" and determine speed of connection 
 
 
+Login as different user on a machine and share screen.
+
+Grant "user2" access to your display on the (non-network) local machine 
 ```
 xhost + local:user2
 ```
- grant "user2" access to your display on the 
-(non-network) local machine 
 
-
+Open a login shell as "user2" 
 ```
 su - user2
 ```
- open a login shell as "user2" 
 
 
+Use pdfjam to extract pages from pdf. [Pdfjam](https://github.com/pdfjam/pdfjam) is a user-friendly layer over the powerful [pdfpages](https://ctan.org/pkg/pdfpages?lang=en) package.
 ```
 pdfjam <input file> <page ranges> -o <output file>
 ```
- Extract pages from pdf
-
 
 
 # Make a bootable USB from an iso image
