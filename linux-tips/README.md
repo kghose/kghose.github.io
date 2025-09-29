@@ -5,7 +5,8 @@ last_modified_at: 2025-09-28
 ---
 
 [Bash creature comforts](bash)\
-[GNOME](gnome)
+[GNOME](gnome)\
+[Neovim etc.](neovim)
 
 * TOC
 {:toc}

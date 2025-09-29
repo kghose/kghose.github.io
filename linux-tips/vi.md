@@ -1,4 +1,8 @@
-# Neo(Vi(m))
+---
+title: Neo(Vi(m))
+permalink: linux-tips/neovim
+last_updated_at: 2025-09-28
+---
 
 
 | Task | Commands |
