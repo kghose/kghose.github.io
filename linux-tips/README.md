@@ -4,8 +4,13 @@ permalink: linux-tips/
 last_modified_at: 2025-09-28
 ---
 
+[Bash creature comforts](bash)\
+[GNOME](gnome)
+
 * TOC
 {:toc}
+
+
 
 # Linux Command reference
 
