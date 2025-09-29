@@ -1,4 +1,8 @@
-# Fascinating things
+---
+title: Fascinating things
+permalink: fascinating-things
+last_modified_at: 2025-09-28
+---
 
 [Don Knuth on ChatGPT (2023)](https://cs.stanford.edu/~knuth/chatGPT20.txt)
 
