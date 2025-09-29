@@ -1,6 +1,7 @@
 ---
 title: Linux Notes
 permalink: /linux-tips
+last_modified_at: 2025-09-28
 ---
 
 * TOC
@@ -399,4 +400,22 @@ fwupdmgr update
 
 Manufacturers may put out a bootable image. You can use `dd` to create a
 bootable USB (steps are noted on this page). 
+
+# Ubuntu: Stop apt from installing snaps
+
+From [ask Ubuntu](
+https://askubuntu.com/questions/1345385/how-can-i-stop-apt-from-installing-snap-packages)
+
+```
+sudo apt-get autopurge snapd
+sudo apt-mark hold snapd
+```
+
+# Ubuntu: Install Firefox through apt
+
+Follow the instructions on the [Firefox
+page](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended)
+
+
+
 
