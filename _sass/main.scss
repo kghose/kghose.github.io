@@ -38,7 +38,10 @@ body {
 
 
 #page_content {
-  img { max-width: 500px; }
+  img { 
+    max-width: 99%;
+    height: auto;
+  }
 }
 
 #post_list {
@@ -49,4 +52,5 @@ pre {
   border-style: solid;
   border-width: 1px;
   padding: 0.5em;
+  overflow: scroll;
 }
