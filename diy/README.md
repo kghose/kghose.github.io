@@ -4,7 +4,6 @@ title: Home Projects
 permalink: diy/
 --- 
 
-# Home Projects
 
 ## Notes
 - [Drills vs Impact drivers]({% link diy/notes/impact.md %})

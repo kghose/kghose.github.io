@@ -1,8 +1,8 @@
 ---
+
+title: Drills vs Impact drivers
 last_modified_at: 2025-09-19
 ---
-
-# Drills vs impact drivers
 
 **Drill/driver:**
 

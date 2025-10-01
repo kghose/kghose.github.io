@@ -5,8 +5,6 @@ date: 2025-09-10
 last_modified_at: 2025-09-16
 ---
 
-# Plumbing notes
-
 ## Threaded joints (NPT - national pipe thread)
 
 (Wisdom from the [ISM blog][threaded joints])

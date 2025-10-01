@@ -1,9 +1,8 @@
 ---
+title: Upgrading to frost free sillcocks
 permalink: /diy/2025-frost-free
 last_modified_at: 2025-09-08
 ---
-
-# Upgrading to frost free sillcocks
 
 Both front and rear hosebibs are leaking from the valve stem. Let's take this
 opportunity to upgrade to frost free sillcocks. 
