@@ -149,6 +149,10 @@ List jobs that are not completed
 lpstat -W not-completed
 ```
 
+Restart print service (sometimes needed to reconnect to a printer)
+```
+sudo systemctl restart cups
+```
 
 Current window manager 
 ```
