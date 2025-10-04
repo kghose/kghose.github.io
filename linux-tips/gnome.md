@@ -4,6 +4,28 @@ permalink: linux-tips/gnome
 last_updated_at: 2025-10-03
 ---
 
+# Workspace shortcuts
+
+Move to previous/next workspace
+```
+<super><pg up/down>
+```
+
+Move window to previous/next workspace
+```
+<shift><super><pg up/down>
+```
+
+Tileing: maximize/minimize window
+```
+<super><up/down>
+```
+
+Tiling: move window to left or right half
+```
+<super><left/right>
+```
+
 # Argos
 Follow the instructions on the [page](https://github.com/p-e-w/argos) (git
 clone, then symlink. The extensions can also be symlinked). 
