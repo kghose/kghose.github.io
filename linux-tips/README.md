@@ -54,9 +54,9 @@ pdfjam <input file> <page ranges> -o <output file>
 image is supplied)
 
 1. Plug in the USB drive
-1. Find which device the drive is labeled as using  `lsblk`. say it's `/dev/sda`
+1. Find which device the drive is labeled as using  `lsblk`. say it's `/dev/sdx`
 1. Use `dd` to create a bootable USB\
- `dd if=linuxmint-22.1-xfce-64bit.iso of=/dev/sda1 bs=8M status=progress &&
+ `dd if=linuxmint-22.1-xfce-64bit.iso of=/dev/sdax bs=8M status=progress &&
  sync`\
  The `sync` at the end ensures all the data is written to the drive.
  `status=progress` is nice to get an indication nothing's frozen up.  
@@ -80,10 +80,9 @@ resource for setting it up yourself.
 
 [ControlMaster]: https://man.openbsd.org/ssh_config.5#ControlMaster
 
-Example:
+Example: add to `~/.ssh/config` 
 
 ```
-# in ~/.ssh/config
 ControlMaster auto
 ControlPath ~/.ssh/control:%C
 ControlPersist 5m
@@ -91,8 +90,15 @@ ControlPersist 5m
 
 # tmux
 
-| `<ctrl>+b` | `c`   | Open a new tab |
-|            | 0...9 | Switch to tab |
+Open a new tab
+```
+<ctrl>+b c
+```
+
+Switch to a tab
+```
+<ctrl>+b 0...9
+```
 
 Add `setw -g mouse on` in `~/.tmux.conf` to enable scrollback with mouse scroll.
 
