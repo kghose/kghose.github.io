@@ -9,13 +9,13 @@ last_modified_at: 2025-09-28
 [GNOME](gnome)\
 [Neovim etc.](neovim)
 
+
 * TOC
 {:toc}
 
+# Measure bandwidth
 
-
-
-Measuring bandwidth with [iPerf3](iperf.fr).
+Use [iPerf3](iperf.fr).
 
 Start iperf3 server on target machine "hostname" 
 ```
@@ -28,8 +28,7 @@ Connect to "hostname" and determine speed of connection
 iperf3 -c hostname
 ```
 
-
-Login as different user on a machine and share screen.
+# Login as different user on a machine and share screen.
 
 Grant "user2" access to your display on the (non-network) local machine 
 ```
@@ -41,6 +40,7 @@ Open a login shell as "user2"
 su - user2
 ```
 
+# PDF operations: pdfjam
 
 Use pdfjam to extract pages from pdf. [Pdfjam](https://github.com/pdfjam/pdfjam) is a user-friendly layer over the powerful [pdfpages](https://ctan.org/pkg/pdfpages?lang=en) package.
 ```
@@ -60,6 +60,14 @@ image is supplied)
  sync`\
  The `sync` at the end ensures all the data is written to the drive.
  `status=progress` is nice to get an indication nothing's frozen up.  
+
+# Get laptop display type
+
+Look through `/sys/class/drm/` for the devices. Find which one's `/enabled`
+value is "enabled" and then run
+```
+cat /sys/class/drm/card1-eDP-1/edid | edid-decode 
+```
 
 
 # mDNS: Local hostname resolution
