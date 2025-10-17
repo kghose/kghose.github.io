@@ -177,19 +177,6 @@ If update-grub is not available
 sudo grub2-mkconfig -o /boot/grub/grub.cfg
 ```
 
-
-Find devices via mDNS 
-```
-avahi-browse -a
-```
-
-
-Find mDNS name for given address 
-```
-avahi-resolve-address 192.168.8.1
-getent hosts 192.168.8.1
-```
- 
 Show details (including size) of a package 
 ```
 apt show <package name>

@@ -82,6 +82,20 @@ resource for setting it up yourself.
 [Avahi]: https://avahi.org/
 [arch-avahi]: https://wiki.archlinux.org/title/avahi
 
+Find devices via mDNS
+
+```
+avahi-browse -a
+```
+
+Find mDNS name for given address
+
+```
+avahi-resolve-address 192.168.8.1
+getent hosts 192.168.8.1
+```
+
+
 # ControlMaster: persist ssh connections
 
 [ControlMaster] can be used to persist/reuse ssh connections e.g. for rsync
