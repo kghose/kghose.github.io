@@ -45,6 +45,11 @@ They got the _feel_ of it right. It's slim, substantial (i.e. heavy for its
 size) and sturdy. Nothing wobbles. All the parts fit together precisely. And of
 course, it has that matte black semi-rubberized grip that I personally like.
 
+The keyboard sits in between the extremely clacky X220 and whatever abomination
+Apple uses and I like it. The keys are quiet and travel enough. (The MacBook
+keys are somehow simultaneously noisy, spongy, and feel like the world's
+shallowest popits)
+
 I have the lowest end i5 (Intel) version and it works just fine browsing,
 writing and compiling code. It's also very power thrifty, barely breaking 5W and
 most of the time sitting at 3.5W. 
