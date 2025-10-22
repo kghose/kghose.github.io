@@ -4,11 +4,11 @@ permalink: linux-tips/
 last_modified_at: 2025-09-28
 ---
 
-[Linux command reference](linux-command-reference)\
-[Bash creature comforts](bash)\
-[GNOME](gnome)\
-[Neovim etc.](neovim)
-
+[Linux command reference](linux-command-reference) \
+[Bash creature comforts](bash) \
+[GNOME](gnome) \
+[Neovim etc.](neovim) \
+[dnf](dnf)
 
 * TOC
 {:toc}
