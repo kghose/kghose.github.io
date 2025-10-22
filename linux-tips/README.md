@@ -8,7 +8,8 @@ last_modified_at: 2025-09-28
 [Bash creature comforts](bash) \
 [GNOME](gnome) \
 [Neovim etc.](neovim) \
-[dnf](dnf)
+[dnf](dnf) \
+[Notes on window managers (Desktops)](desktops)
 
 * TOC
 {:toc}
