@@ -8,8 +8,10 @@ last_modified_at: 2025-09-28
 [Bash creature comforts](bash) \
 [GNOME](gnome) \
 [Neovim etc.](neovim) \
-[dnf](dnf) \
 [Notes on window managers (Desktops)](desktops)
+
+
+# Topics
 
 * TOC
 {:toc}
@@ -208,6 +210,16 @@ sudo apt-mark hold snapd
 Follow the instructions on the [Firefox
 page](https://support.mozilla.org/en-US/kb/install-firefox-linux#w_install-firefox-deb-package-for-debian-based-distributions-recommended)
 
+# dnf: Fedora (Red Hat) package manager
 
+List all the repositories dnf searches through
+```
+dnf repolist --enabled
+```
+
+Remove a repository (has to be done "manually")
+```
+rm /etc/yum.repos.d/file_name.repo
+```
 
 
