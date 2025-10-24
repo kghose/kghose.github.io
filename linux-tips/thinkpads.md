@@ -10,7 +10,7 @@ last_modified_at: 2025-10-12
 I have one that was built in 2012. I added an SSD and run Ubuntu on it. You can
 get cheap and poor quality batteries off eBay. It was the first time I was
 exposed to the special Thinkpad black rubbery coating. Some people hate that
-color and coating. I fall on the other side.
+color and coating. I like the feel of it a lot.
 
 Some people love the keyboard. I do like the feel and travel of it, but the 
 keys are a bit noisy. 
@@ -21,7 +21,7 @@ train, but the screen and touch pad are a bit cramped for other work.
 
 The power consumption is high compared to the other machines I have. Just
 browsing and writing will pull 15W! In comparison my T14 G1 pulls 3.5W for such
-tasks and 5.5W when streaming video.
+tasks.
 
 It's reputation as a tank is well deserved. 
 
@@ -45,10 +45,12 @@ They got the _feel_ of it right. It's slim, substantial (i.e. heavy for its
 size) and sturdy. Nothing wobbles. All the parts fit together precisely. And of
 course, it has that matte black semi-rubberized grip that I personally like.
 
-The keyboard sits in between the extremely clacky X220 and whatever abomination
-Apple uses and I like it. The keys are quiet and travel enough. (The MacBook
-keys are somehow simultaneously noisy, spongy, and feel like the world's
-shallowest popits)
+I like the keyboard, perhaps even more than the X220's one because it is quiet
+and feels good to type on. I even 
+
+(Here we take a swipe at whatever abomination Apple puts on their machines:
+somehow simultaneously noisy, spongy, and feel like the world's shallowest
+popits)
 
 I have the lowest end i5 (Intel) version and it works just fine browsing,
 writing and compiling code. It's also very power thrifty, barely breaking 5W and
@@ -62,6 +64,16 @@ This is my current favorite and I think I'll be able to use it until it
 completely falls apart. Fedora 42 runs excellently on it
 [with a few annoyances](/fedora42-t14g1).
 
+
+## Battery life
+
+Battery life with a three year old battery which is at 90% design capacity is
+phenomenal. For my typical task of writing things using a terminal based editor,
+I see about 3.5W which translates to about 10hrs of working time.
+
+I was a little worried by notes from people online saying that the Intel
+motherboards were terrible at power consumption and gave very poor battery life,
+but I see nothing concerning here.
 
 # E14 G4 
 
