@@ -135,15 +135,6 @@ Add `setw -g mouse on` in `~/.tmux.conf` to enable scrollback with mouse scroll.
 - `tmux` is found in SynoCLI Network Tools
 
 
-# Topic sheets
-
-1. [Gnome](gnome.md)
-1. [Utilities](utils.md)
-1. [Bash multiple history files](bash-history.md)
-1. [Multiple Dosbox configurations](dosbox-conf.md)
-1. [Writing](writing.md)
-
-
 # Software I use
 
 ## General
