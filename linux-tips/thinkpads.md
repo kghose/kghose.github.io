@@ -93,3 +93,19 @@ is using a headset.
 
 All in all, I prefer the T14 G1 over the E14 G4 by far.
 
+# Using the track point
+
+There is a joke that no one uses the trackpoint and to be honest it took me over
+a decade to actually try using it. Once I got in some practice, however, I'd say
+it is superior to the touch pad. Thinkpad's placement of the buttons right below
+the space bar is especially ergonomic. 
+
+I can mover the cursor faster and with much less finger movement, compared to
+the touchpad. Left clicks are conveneient. Scrolling, which involves holding the
+middle button down while pushing on the trackpoint, is particularly more
+comfortable than swiping with two fingers. 
+
+Only the right click is a little awkward (I have to bend my thumb to get to the
+button) but the fact that middle click opens links in a new tab in Firefox means
+I have to use the right click far less often.
+
