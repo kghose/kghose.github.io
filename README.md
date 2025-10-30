@@ -1,7 +1,7 @@
 [Linux notes](linux-tips)\
 [Thinkpads](thinkpads)\
-[Fascinating things](fascinating-things)\
-[Home projects (and notes)](diy)
+[Home projects (and notes)](diy)\
+[Fascinating things](fascinating-things)
 
 {% include blog.html %}
 
