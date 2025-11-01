@@ -129,15 +129,14 @@ ControlPersist 5m
 
 # Neovim/Vim
 
-Open file for editing in current window
-```
-:edit file.txt
-```
+Open file for editing in current window `:edit file.txt`
 
-Switch to buffer (with autocomplete)
-```
-:b <tab>
-```
+Switch to buffer (with autocomplete) `:b <tab>`
+
+Split pane `:vsplit` or `:hsplit`
+
+Go to pane `CTRL + W` followed by arrow keys. On NeoVim you can also click on
+the split.
 
 Go to end of file: `G`
 
@@ -149,13 +148,11 @@ Copy large number of lines.
 1. This can be used to delete too ``d`a``
 
 
-Open file in new tab 
-`tabedit <filename>` 
+Open file in new tab `:tabedit <filename>` 
 
-Go to second tab `2gt` 
+Go to second tab `2gt`. On NeoVim you can also click on the tab. 
 
 Wrap paragraph `gq}` 
-
 
 
 # tmux
