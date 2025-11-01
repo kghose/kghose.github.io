@@ -154,6 +154,46 @@ Go to second tab `2gt`. On NeoVim you can also click on the tab.
 
 Wrap paragraph `gq}` 
 
+Check if compiled with clipboard support `:echo has('clipboard')`
+
+For Vim you can do `vim --version | grep clipboard` but not for NeoVim.
+
+Paste from clipboards (When compiled with +clipboard option
+```
+"+p
+"*p
+```
+
+Builtin file explorer: `netrw`
+
+Refs: [[1](https://www.vim.org/scripts/script.php?script_id=1075)], 
+[[2](https://neovim.io/doc/user/pi_netrw.html)]
+
+
+## Plugins
+1. Git: [git gutter](https://github.com/airblade/vim-gitgutter)
+2. LSP plugin: [A.L.E](https://github.com/dense-analysis/ale)
+
+
+## Configuration notes
+
+In `.vimrc`/`init.vim`
+
+```
+" Auto save for markdown files in insert mode
+" https://stackoverflow.com/a/60095826
+" https://stackoverflow.com/a/63589188
+
+autocmd BufNewFile,BufRead *.md :autocmd TextChangedI <buffer> if &readonly == 0 | silent write | endif
+
+
+
+" _Esc_ ape from insert mode is slow
+" https://vi.stackexchange.com/a/20220
+
+set tttimeoutlen=5
+```
+
 
 # tmux
 
