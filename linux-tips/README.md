@@ -11,8 +11,6 @@ last_modified_at: 2025-09-28
 [Notes on window managers (Desktops)](desktops)
 
 
-# Topics
-
 * TOC
 {:toc}
 
@@ -128,6 +126,37 @@ ControlMaster auto
 ControlPath ~/.ssh/control:%C
 ControlPersist 5m
 ```
+
+# Neovim/Vim
+
+Open file for editing in current window
+```
+:edit file.txt
+```
+
+Switch to buffer (with autocomplete)
+```
+:b <tab>
+```
+
+Go to end of file: `G`
+
+Go to 34% of the file: `34%` 
+
+Copy large number of lines. 
+1. Mark starting line `ma`
+1. At last line, yank from mark ``y`a``
+1. This can be used to delete too ``d`a``
+
+
+Open file in new tab 
+`tabedit <filename>` 
+
+Go to second tab `2gt` 
+
+Wrap paragraph `gq}` 
+
+
 
 # tmux
 
