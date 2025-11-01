@@ -16,6 +16,22 @@ last_modified_at: 2025-09-28
 * TOC
 {:toc}
 
+# Sleep stats
+
+```
+cat /sys/power/state
+cat /sys/power/mem_sleep
+```
+
+Detailed description of the valyes are in the [kernel docs](https://www.kernel.org/doc/Documentation/power/states.txt)
+
+Change with
+
+```
+echo s2idle | sudo tee /sys/power/mem_sleep deep
+```
+
+
 # Measure bandwidth
 
 Use [iPerf3](iperf.fr).
