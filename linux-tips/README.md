@@ -1,13 +1,13 @@
 ---
 title: Linux Notes
 permalink: linux-tips/
-last_modified_at: 2025-09-28
+last_modified_at: 2025-11-01
 ---
 
+[Buffers, splits and tabs in Vi](vi-buffers) \
 [Linux command reference](linux-command-reference) \
 [Bash creature comforts](bash) \
 [GNOME](gnome) \
-[Neovim etc.](neovim) \
 [Notes on window managers (Desktops)](desktops)
 
 

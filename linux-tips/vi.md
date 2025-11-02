@@ -1,80 +1,47 @@
 ---
-title: Neo(Vi(m))
-permalink: linux-tips/neovim
-last_updated_at: 2025-09-28
+title: Neo(Vi(m)) buffers, splits and tabs
+permalink: linux-tips/vi-buffers
+last_updated_at: 2025-11-01
 ---
 
+# Buffers
 
-| Task | Commands |
-| ------- | ---------------------|
-| Open file in new tab | `tabedit <filename>` |
-| Go to third tab | `2gt` |
-| Wrap paragraph | `gq}` |
-| Go to 34% of the file | `34%` |
-| Copy large number of lines | Mark starting line: `ma`|
-| | At last line, yank from mark: ``y`a``|
-| This can be used to delete too | ``d`a``|
-| See available color schemes | `:colorscheme [space] [CTRL+D]` |
-| Built in color schemes are in | `/usr/share/vim/vim90/colors/` |
-| Open builtin file explorer `netrw` | `:Explore`, `:Sexplore`, `:Vexplore` |
+In Vi you can open a file (`:edit file1.txt`) and then open another one (`:edit
+file2.txt`). The editor now shows you `file2.txt`. Unlike GUI editors
+`file1.txt` isn't really forgotten. It just in a buffer and you can type `:b
+TAB` to list all the available buffers and switch to one of them.
+
+In this respect a buffer in Vi does the same job as a tab in a GUI editor.
 
 
-| `GitGutterStageHunk` | Stage the hunk the cursor is on |
+# Splits
 
-## Auto save for markdown files
+A split breaks the window vertically (`:vsplit`) or horizontally (`:hsplit`)
+into multiple views each of which can show a buffer. These buffers can be same
+or different.
 
-In `.vimrc`/`init.vim`
-```
-" Auto save for markdown files in insert mode
-autocmd BufNewFile,BufRead *.md :autocmd TextChangedI <buffer> if &readonly == 0 | silent write | endif
-```
+# Tabs
 
-Refs: [[1](https://stackoverflow.com/a/60095826)], [[2](https://stackoverflow.com/a/63589188)]
+Tabs allow us to have multiple windows.
 
+# Example
 
-## Copy-paste
+I'm revising my novel. I have an outline, the old version of the manuscript and
+the new version of the manuscript. 
 
-Check if compiled with clipboard support
-```
-vim --version | grep clipboard
-
-# or
-:echo has('clipboard'))
-```
-
-Paste from clipboards (When compiled with +clipboard option
-```
-"+p
-"*p
-```
+I primarily edit MS v2 while refering to the outline, and periodically copy over
+chapters and sections from MS v1.
 
 
-## _Esc_ ape from insert mode is slow
-
-https://vi.stackexchange.com/a/20220
-```
-set tttimeoutlen=5
-```
-
-
-## Builtin file explorer: `netrw`
+My prefered layout is to do a vertical split, have the outline/old MS open in
+the left split (as two buffers) and the new MS open on the right. 
 
 ```
-# Start with
+----------------------------------
+|               |                |
+|  Outline/     |                |
+|  MS v1        |    MS v2       |
+|               |                |
+----------------------------------
 ```
-
-Refs: [[1](https://www.vim.org/scripts/script.php?script_id=1075)], 
-[[2](https://neovim.io/doc/user/pi_netrw.html)]
-
-## Color schemes
-```
-
-
-
-## Plugins
-1. [git gutter](https://github.com/airblade/vim-gitgutter)
-2. [A.L.E](https://github.com/dense-analysis/ale)
-3. ~~[NERDTree](https://github.com/preservim/nerdtree)~~ 
-Actually, the "builtin" explorer `netrw` is good enough for me.
-
 
