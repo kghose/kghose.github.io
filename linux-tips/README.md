@@ -5,7 +5,6 @@ last_modified_at: 2025-11-01
 ---
 
 [Buffers, splits and tabs in Vi](vi-buffers) \
-[Linux command reference](linux-command-reference) \
 [Bash creature comforts](bash) \
 [GNOME](gnome) \
 [Notes on window managers (Desktops)](desktops)
@@ -14,19 +13,221 @@ last_modified_at: 2025-11-01
 * TOC
 {:toc}
 
-# Sleep stats
+# System
+
+Commandline options kernel was started with
+```
+cat /proc/cmdline
+```  
+
+Distribution version details
+```
+lsb_release -a
+```
+
+
+Kernel details
+```
+uname -a
+```
+
+
+Machine serial number 
+```
+sudo dmidecode -s system-serial-number
+```
+
+Machine bios version
+```
+sudo dmidecode -s bios-version 
+```
+
+
+System log (add `-no-tail` when piping to something) 
+```
+journalctl --system -S "2024-03-22 14:00"
+``` 
+
+Get display details
+```
+edid-decode /sys/class/drm/card0-eDP-1/edid
+```
+
+
+Memory (RAM) details 
+```
+sudo lshw -C memory
+```
+
+
+NVMe SSD details 
+```
+sudo smartctl -a /dev/nvme0
+```
+
+
+Block device e.g. disk details 
+```
+lsblk
+```
+
+
+CPU details 
+```
+lscpu
+```
+
+
+USB bus details 
+```
+lsusb
+```
+
+
+Firehose of hardware info 
+```
+sudo hwinfo
+```
+
+
+Disk space stats in human friendly format 
+```
+df -H
+```
+
+
+Service status 
+```
+sudo systemctl status <service name>
+```
+
+
+Enable, start and stop to control services 
+```
+sudo systemctl enable <service name>
+sudo systemctl start <service name>
+sudo systemctl stop <service name>
+```
+
+# Get laptop display type
+
+Look through `/sys/class/drm/` for the devices. Find which one's `/enabled`
+value is "enabled" and then run
+```
+cat /sys/class/drm/card1-eDP-1/edid | edid-decode 
+```
+
+
+# Sleep states
 
 ```
 cat /sys/power/state
 cat /sys/power/mem_sleep
 ```
 
-Detailed description of the valyes are in the [kernel docs](https://www.kernel.org/doc/Documentation/power/states.txt)
+Detailed description of the values are in the [kernel docs](https://www.kernel.org/doc/Documentation/power/states.txt)
 
 Change with
 
 ```
 echo s2idle | sudo tee /sys/power/mem_sleep deep
+```
+
+Also see [these kernel docs](https://www.kernel.org/doc/Documentation/power/interface.txt)
+
+
+# Printing
+
+List all available printers
+```
+lpstat -pa
+```
+
+List current printer jobs
+```
+lpstat
+```
+
+Output will be of the form
+```
+Brother_HL_L2300-181  kg  165888   Sun 21 Sep 2025 07:48:03 PM EDT
+```
+Here the `-181` is the job number.
+
+Remove a print job
+```
+lprm <job number>
+```
+
+
+List jobs that are not completed
+```
+lpstat -W not-completed
+```
+
+Restart print service (sometimes needed to reconnect to a printer)
+```
+sudo systemctl restart cups
+```
+
+# Filesystem
+
+Size of directory 
+```
+du -sh <directory>
+```
+
+Used and free sizes of all mount points 
+```
+df -H
+```
+
+List directory contents recursively
+```
+ls -R
+```
+
+Find and print all empty directories 
+```
+find . -type d -empty -print
+```
+
+
+Delete all empty directories 
+```
+find . -type d -empty -delete`
+```
+
+Find and print all files with given extension 
+```
+find Takeout -name "*.json" -type f -print
+```
+
+# Bash
+
+
+Redirect stdout of `cmd` to `std.out` and stderr to `std.err
+```
+cmd > std.out 2> std.err
+```
+
+Redirect stdout and stderr to `out.txt
+```
+cmd 2> out.txt
+```
+
+
+# Networking
+
+Networking interface configuration 
+```
+ifconfig
+```
+
+
+Trace route to host 
+```
+mtr 8.8.8.8
 ```
 
 
@@ -77,15 +278,6 @@ image is supplied)
  sync`\
  The `sync` at the end ensures all the data is written to the drive.
  `status=progress` is nice to get an indication nothing's frozen up.  
-
-# Get laptop display type
-
-Look through `/sys/class/drm/` for the devices. Find which one's `/enabled`
-value is "enabled" and then run
-```
-cat /sys/class/drm/card1-eDP-1/edid | edid-decode 
-```
-
 
 # mDNS: Local hostname resolution
 
