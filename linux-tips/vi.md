@@ -45,3 +45,8 @@ the left split (as two buffers) and the new MS open on the right.
 ----------------------------------
 ```
 
+You can even script NeoVim to open up this arrangement at startup:
+
+```
+nvim -c ":e outline.md | :e ms_v2.md | :vs ms_v1.md"
+```
