@@ -67,9 +67,11 @@ completely falls apart. Fedora 42 runs excellently on it
 
 ## Battery life
 
-Battery life with a three year old battery which is at 90% design capacity is
-phenomenal. For my typical task of writing things using a terminal based editor,
-I see about 3.5W which translates to about 10hrs of working time.
+Battery life with a three year old battery which is at 90% design capacity
+(50.45 Wh design, 45.95 Wh currently) is phenomenal. For my typical task of
+writing things using a terminal based editor, I see about 3.5W or 10% battery
+charge per hour of working, which translates to about 7-8hrs of working time
+since I usually charge the battery to 80%.
 
 I was a little worried by notes from people online saying that the Intel
 motherboards were terrible at power consumption and gave very poor battery life,
