@@ -111,3 +111,14 @@ Only the right click is a little awkward (I have to bend my thumb to get to the
 button) but the fact that middle click opens links in a new tab in Firefox means
 I have to use the right click far less often.
 
+# PgUp PgDn keys
+
+I was first exposed to the five navigation key cluster on the X220 and I _hated_
+it because I'd fat-finger the PgUp/Dn keys when aiming for the cursor keys and
+would lose my place in the document.
+
+I began to appreciate them more when I got to the slightly larger E14/T14
+keyboards _and_ learned to use the GNOME Mode key window management shortcuts.
+For example the Mode + Arrow keys tile the windows while Mode + PgUp/Dn keys
+switch workspaces.
+
