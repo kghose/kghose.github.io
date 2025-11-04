@@ -1,28 +1,47 @@
 ---
-title: Neo(Vi(m)) buffers, splits and tabs
+title: Neo(Vi(m)) buffers, views, splits and tabs
 permalink: linux-tips/vi-buffers
-last_updated_at: 2025-11-01
+last_updated_at: 2025-11-03
 ---
 
-# Buffers
+The Vi series of editors became more powerful to use once I finally understood
+the concepts behind _buffers_ and _views_.
+
+# Buffers and views
 
 In Vi you can open a file (`:edit file1.txt`) and then open another one (`:edit
-file2.txt`). The editor now shows you `file2.txt`. Unlike GUI editors
-`file1.txt` isn't really forgotten. It just in a buffer and you can type `:b
-TAB` to list all the available buffers and switch to one of them.
+file2.txt`). After the second command the editor will be showing you
+`file2.txt`. Unlike GUI editors, however, `file1.txt` isn't really forgotten.
+It's still in memory in a _buffer_. It's just that the _view_ isn't showing it.
 
-In this respect a buffer in Vi does the same job as a tab in a GUI editor.
+You can type `:b TAB` to list all the available buffers and get the current
+_view_ to show a buffer you choose.
 
+A buffer is kind of like a tab in a GUI editor, but is actually much more
+powerful.
 
-# Splits
+# Split view
 
-A split breaks the window vertically (`:vsplit`) or horizontally (`:hsplit`)
-into multiple views each of which can show a buffer. These buffers can be same
-or different.
+A split breaks the window vertically (`:vsplit`) or horizontally (`:split`)
+into multiple views each of which can show a buffer. These buffers can be _same
+or different._
+
+Now you see how powerful this is. I can load up a file (which is in a buffer
+now) and then split the view into two halves and I can view different parts of
+the same buffer (file) in the two views. These are live views: I can edit two
+different parts of the same file in the two views.
+
+If I load multiple files, I can use the `:b` command to switch which buffer is
+show in a given view.
 
 # Tabs
 
-Tabs allow us to have multiple windows.
+Tabs are yet another layer on top of this. Tabs allow us to have multiple
+windows in the application. Each window can have different splits and different
+views onto any buffer, including the same buffer viewed multiple times across
+tabs.
+
+Once I understood buffers and splits I stopped using tabs.
 
 # Example
 
