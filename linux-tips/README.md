@@ -203,6 +203,21 @@ Find and print all files with given extension
 find Takeout -name "*.json" -type f -print
 ```
 
+# Audio
+
+Spot check microphone: You'll get a cool bar in your terminal that shows sound
+level.
+```
+arecord -vv -f dat /dev/null
+```
+
+Record 5 seconds of audio at 44 kHz and 16 bit resolution, then play it back.
+```
+arecord -d 5 -r 44000 -f S16_LE test.wav
+aplay test.wav
+```
+
+
 # Bash
 
 
