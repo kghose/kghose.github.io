@@ -502,4 +502,8 @@ Remove a repository (has to be done "manually")
 rm /etc/yum.repos.d/file_name.repo
 ```
 
+# Some GNOME settings
 
+Prevent Bluetooth being turned on automatically after wakeups or reboots:
+
+In `/etc/bluetooth/main.conf` set `AutoEnable=false`
