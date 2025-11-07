@@ -96,6 +96,14 @@ df -H
 ```
 
 
+Process, CPU and memory information: `htop`
+
+GPU information: `nvtop` (https://github.com/Syllo/nvtop)
+
+
+
+# Services
+
 Service status 
 ```
 sudo systemctl status <service name>
@@ -260,6 +268,10 @@ Connect to "hostname" and determine speed of connection
 ```
 iperf3 -c hostname
 ```
+
+
+
+
 
 # Login as different user on a machine and share screen.
 
