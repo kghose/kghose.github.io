@@ -46,7 +46,17 @@ size) and sturdy. Nothing wobbles. All the parts fit together precisely. And of
 course, it has that matte black semi-rubberized grip that I personally like.
 
 I like the keyboard, perhaps even more than the X220's one because it is quiet
-and feels good to type on. I even 
+_and_ feels good to type on. 
+
+The keys are shallower than the X220 but the have a nice non-linearity to their
+pressure - there is a distinct "snap" near the end of the travel that feels good
+on the fingers. 
+
+Typing fast makes a rapid pattering noise that is acceptable and the snaps give
+good feedback. 
+
+The down cursor key as a raised ridge, making position the fingers on the
+[navigation cluster](#navigation-keys) more convenient.   
 
 (Here we take a swipe at whatever abomination Apple puts on their machines:
 somehow simultaneously noisy, spongy, and feel like the world's shallowest
@@ -111,11 +121,11 @@ Only the right click is a little awkward (I have to bend my thumb to get to the
 button) but the fact that middle click opens links in a new tab in Firefox means
 I have to use the right click far less often.
 
-# PgUp PgDn keys
+# Navigation keys
 
 I was first exposed to the five navigation key cluster on the X220 and I _hated_
-it because I'd fat-finger the PgUp/Dn keys when aiming for the cursor keys and
-would lose my place in the document.
+it. I'd fat-finger the PgUp/Dn keys when aiming for the cursor keys and would
+lose my place in the document.
 
 I began to appreciate them more when I got to the slightly larger E14/T14
 keyboards _and_ learned to use the GNOME Mode key window management shortcuts.
