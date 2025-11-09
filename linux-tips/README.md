@@ -98,9 +98,16 @@ df -H
 
 Process, CPU and memory information: `htop`
 
-GPU information: `nvtop` (https://github.com/Syllo/nvtop)
+GPU information: `intel_gpu_top`
 
+or: `nvtop` (https://github.com/Syllo/nvtop)
 
+For Intel GPUs `setcap` may be needed to set enable `CAP_PERFMON` capabilities
+on the binary.
+
+```
+sudo setcap cap_perfmon+ep intel_gpu_top
+```
 
 # Services
 
@@ -285,12 +292,33 @@ Open a login shell as "user2"
 su - user2
 ```
 
-# PDF operations: pdfjam
+# PDFs 
 
-Use pdfjam to extract pages from pdf. [Pdfjam](https://github.com/pdfjam/pdfjam) is a user-friendly layer over the powerful [pdfpages](https://ctan.org/pkg/pdfpages?lang=en) package.
+Use [pdfjam](https://github.com/pdfjam/pdfjam) for joining files together,
+selecting pages, reducing several source pages onto one output page, etc.,
+
+It is a user-friendly layer over the powerful
+[pdfpages](https://ctan.org/pkg/pdfpages?lang=en) package. 
+
 ```
 pdfjam <input file> <page ranges> -o <output file>
 ```
+
+It's annoying to download the whole tex distribution when all we want to do is
+convert markdown to a simple pdf using pandoc. We can use the `pdfroff` package.
+
+```
+pandoc                               \
+   *.md                              \
+  -f markdown                        \
+  --metadata title="My manuscript"   \
+  -o ms.pdf                          \
+  --pdf-engine=pdfroff
+```
+
+# Images
+
+Use ImageMagick
 
 
 # Make a bootable USB from an iso image
@@ -519,3 +547,16 @@ rm /etc/yum.repos.d/file_name.repo
 Prevent Bluetooth being turned on automatically after wakeups or reboots:
 
 In `/etc/bluetooth/main.conf` set `AutoEnable=false`
+
+# Personal list of software
+
+1. NeoVim
+1. pandoc
+1. pdfroff
+1. firefox
+1. pdfjam
+1. Image Magick
+1. simple scan
+1. `intel_gpu_top` / nvtop
+1. stylua
+
