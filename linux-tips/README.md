@@ -329,10 +329,14 @@ image is supplied)
 1. Plug in the USB drive
 1. Find which device the drive is labeled as using  `lsblk`. say it's `/dev/sdx`
 1. Use `dd` to create a bootable USB\
- `dd if=linuxmint-22.1-xfce-64bit.iso of=/dev/sdax bs=8M status=progress &&
- sync`\
- The `sync` at the end ensures all the data is written to the drive.
- `status=progress` is nice to get an indication nothing's frozen up.  
+
+```
+dd if=linuxmint-22.1-xfce-64bit.iso of=/dev/sdax bs=8M status=progress &&
+ sync
+```
+
+The `sync` at the end ensures all the data is written to the drive.
+`status=progress` is nice to get an indication nothing's frozen up.  
 
 # mDNS: Local hostname resolution
 
