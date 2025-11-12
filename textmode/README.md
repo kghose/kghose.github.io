@@ -56,19 +56,34 @@ Breakpoint 1 set at 0x4e5fd6 for main.main() ./main.go:80
 
 ```
 
-# Lynx: WWW.txt
+# Web-browsers
 
-There are a surprising number of text mode browsers. Lynx is the one I've used
-on and off and which is the oldest one and is under continual development.
-Unlike the other text mode tooling listed here, I
-wouldn't recommend you use Lynx seriously: The modern web is built for GUIs and
-is mostly horribly broken for text mode browsing.
+There are a surprising number of text mode browsers. But, unlike the other text
+mode tooling listed here, I wouldn't recommend you use text mode browsers
+seriously: The modern web is built for GUIs and is mostly horribly broken for
+text mode browsing.
 
-Tasteful sites, like this one, however, render quite nicely in text mode:
+Tasteful sites, like this one, however, render quite nicely in text mode.
+
+## Lynx
+
+[Lynx] is the one I've used on and off ever since I got a connection to the
+internet. Lynx is unique in that it has been under continual development since
+1992. 
+
 ![](lynx-screenshot.png)
 
+[lynx]: https://lynx.invisible-island.net/ 
 
 
+## w3m
+
+[w3m] is almost as old as Lynx, though it seems to have fewer developers behind
+it. 
+
+![](w3m-screenshot.png)
+
+[w3m]: https://w3m.sourceforge.net/STORY
 
 
 # OpenSCAD
