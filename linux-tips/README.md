@@ -7,8 +7,8 @@ last_modified_at: 2025-11-01
 [Buffers, splits and tabs in Vi](vi-buffers) \
 [Bash creature comforts](bash) \
 [GNOME](gnome) \
-[Notes on window managers (Desktops)](desktops)
-
+[Notes on window managers (Desktops)](desktops) \
+[Bug reports](bug-reports)
 
 * TOC
 {:toc}
