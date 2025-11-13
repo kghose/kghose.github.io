@@ -1,6 +1,6 @@
 ---
 title: Bug reports
-permalink: /linux-tips/bug-reports
+permalink: linux-tips/bug-reports
 last_modified_at: 2025-11-12
 ----
 
