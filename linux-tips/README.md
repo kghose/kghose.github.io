@@ -8,6 +8,7 @@ last_modified_at: 2025-11-01
 [Bash creature comforts](bash) \
 [GNOME](gnome) \
 [Notes on window managers (Desktops)](desktops) \
+[Notes on terminal emulators](terminals) \
 [Bug reports](bug-reports)
 
 * TOC
