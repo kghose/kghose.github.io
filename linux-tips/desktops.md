@@ -4,7 +4,7 @@ permalink: linux-tips/desktops
 last_modified_at: 2025-10-22
 ---
 
-# Sway
+# [Sway](swaywm.org)
 I tried it very briefly. It's an experiment in a keyboard first desktop
 environment. I suspect that if I spent a little time setting up short cut keys
 to my favorite programs I could enjoy the various tiling modes etc.

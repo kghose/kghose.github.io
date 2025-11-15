@@ -7,11 +7,9 @@ last_modified_at: 2025-11-14
 (A console should just do its job and get out of the way, but sometimes it's
 nice to have some creature comforts because one does spend a lot of time here.)
 
-# wezterm
+# [wezterm](https://wezterm.org/)
 
 (As experienced on GNOME (on Fedora))
-
-https://github.com/wezterm/wezterm
 
 Liked the more compact tab bar, nerd sniped by the command console and
 configuration autoreload, stayed for all the features and keyboard shortcuts
@@ -37,9 +35,7 @@ Dislikes:
   - F11 for fullscreen does not work
 
 
-# GNOME Terminal
-
-https://help.gnome.org/users/gnome-terminal/stable/
+# [GNOME Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
 
 I've used this for many years, for as long as I've had Linux running on personal
 and lab machines. It comes (came) default with GNOME and I used it whenever I
@@ -49,9 +45,7 @@ a GUI to adjust all the colors.
 I didn't stop using it for any reason other than I found wezterm.
 
 
-# Konsole
-
-https://apps.kde.org/konsole/
+# [Konsole](https://apps.kde.org/konsole/)
 
 I used it while I was using KDE a long, long time ago. My recollection was that
 it was _just fine_, like GNOME terminal.
