@@ -68,7 +68,7 @@ most of the time sitting at 3.5W.
 
 I have the 45% NTSC, 300 nit touchscreen. It's what I could find. I don't really
 need the touchscreen and I'm not too fussy about color. The 300 nits is bright
-enough. 
+enough for working outdoors in sunlight. 
 
 This is my current favorite and I think I'll be able to use it until it
 completely falls apart. Fedora 42 runs excellently on it
@@ -83,6 +83,9 @@ writing things using a terminal based editor, I see about 3.5W or 10% battery
 charge per hour of working, which translates to about 7-8hrs of working time
 since I usually charge the battery to 80%.
 
+At 100% brightness on the 45% NTSC 300nits screen I burn about 7W while browsing
+and writing.
+
 I was a little worried by notes from people online saying that the Intel
 motherboards were terrible at power consumption and gave very poor battery life,
 but I see nothing concerning here.
@@ -91,19 +94,31 @@ but I see nothing concerning here.
 
 **(Unfairly compared to the T14 G1)**
 
-The keyboard of the E14 G4 is similar to that of the T14 G1. The sizes are
-similar. The similarity ends there.
 
-The E14 G4 feels more plasticky and flimsy. The fact that mine has a gray
-plastic casing as opposed to the traditional black rubberized shell doesn't
-help.
+On paper the E14 has a better build because it has a metal lid. However, The
+T14's plastic and glass fiber body feels slimmer and stiffer and lighter while
+the E14 feels bulkier, more plasticky and flimsy. 
+
+The fact that mine has a gray plastic casing as opposed to the traditional black
+rubberized shell doesn't help, and it's annoying when the paint rubs off.
+
+The keyboard of the E14 G4 is similar to that of the T14 G1 and the sizes are
+similar. The speakers on the E14 aim downwards for some reason and are too soft.
+I don't think they pass even for business use. Perhaps the assumption is that
+everyone is using a headset.
+
+The camera is a ThinkPad quality camera, which is to say, pretty crappy given
+the standard Apple has set for us.
 
 The one I have has the 250 nit touchscreen and it is difficult to use outdoors.
-The speakers on the E14 aim downwards for some reason and are too soft. I don't
-think they pass even for business use. Perhaps the assumption is that everyone
-is using a headset.
 
-All in all, I prefer the T14 G1 over the E14 G4 by far.
+Functionally, the E14 G4 (i5-1235U) is ahead of the T14 G1 (i5-10210U) but it
+seems to draw a bit more power during my tasks (writing and light browsing) and
+I don't really use the extra oomph. 
+
+All in all, I prefer the T14 G1 over the E14 G4 by far. The current plan, when
+the T14 dies, is to replace it with another T14, probably a G6, and keep the E14
+around as the backup.
 
 # Using the track point
 
