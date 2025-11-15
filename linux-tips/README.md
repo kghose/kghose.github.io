@@ -1,7 +1,7 @@
 ---
 title: Linux Notes
 permalink: linux-tips/
-last_modified_at: 2025-11-01
+last_modified_at: 2025-11-14
 ---
 
 [Buffers, splits and tabs in Vi](vi-buffers) \
@@ -15,6 +15,11 @@ last_modified_at: 2025-11-01
 {:toc}
 
 # System
+
+As a general note, the [arch wiki] is an absolutely fabulous resource for
+troubleshooting and just informational reading about all things Linux.
+
+[arch wiki]: wiki.archlinux.org
 
 Commandline options kernel was started with
 ```
