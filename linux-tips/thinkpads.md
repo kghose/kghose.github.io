@@ -55,7 +55,7 @@ on the fingers.
 Typing fast makes a rapid pattering noise that is acceptable and the snaps give
 good feedback. 
 
-The down cursor key as a raised ridge, making position the fingers on the
+The down cursor key has a raised ridge, making position the fingers on the
 [navigation cluster](#navigation-keys) more convenient.   
 
 (Here we take a swipe at whatever abomination Apple puts on their machines:
@@ -65,6 +65,9 @@ popits)
 I have the lowest end i5 (Intel) version and it works just fine browsing,
 writing and compiling code. It's also very power thrifty, barely breaking 5W and
 most of the time sitting at 3.5W. 
+
+The fan stays off under the "Power Saver" setting under GNOME, which sets the
+CPU governor to `powersave` which keeps the CPU frequency under 800 MHz.
 
 I have the 45% NTSC, 300 nit touchscreen. It's what I could find. I don't really
 need the touchscreen and I'm not too fussy about color. The 300 nits is bright
