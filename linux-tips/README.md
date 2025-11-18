@@ -390,7 +390,7 @@ Open file for editing in current window `:edit file.txt`
 
 Switch to buffer (with autocomplete) `:b <tab>`
 
-Split pane `:vsplit` or `:hsplit`
+Split pane `:vsplit` or `:split`
 
 Go to pane `CTRL + W` followed by arrow keys. On NeoVim you can also click on
 the split.
