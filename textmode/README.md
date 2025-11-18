@@ -72,7 +72,7 @@ to allowlist the freshly downloaded files.
 
 ![](aerc-screenshot.png)
 
-[GMX](gmx.com) was the only mail provider I found that
+[GMX](http://gmx.com) was the only mail provider I found that
 1. Has **clear** instructions on how to set up an email client using POP/IMAP.
 1. Even sent me a nice email `Subject: Failed access via e-mail program` with
    detailed instructions on why my attempt to use my third party email client
@@ -132,8 +132,8 @@ Tasteful sites, like this one, however, render quite nicely in text mode.
 ## Lynx
 
 [Lynx] is the one I've used on and off ever since I got a connection to the
-internet. Lynx is unique in that it has been under continual development since
-1992. 
+internet and I think it's the one that has been under continuous development the
+longest: since 1992. 
 
 ![](lynx-screenshot.png)
 
