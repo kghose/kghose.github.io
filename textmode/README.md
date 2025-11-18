@@ -1,7 +1,7 @@
 ---
 title: Text Mode Magic
 permalink: textmode
-last_modified_at: 2025-11-11
+last_modified_at: 2025-11-17
 ---
 
 The fixed width font terminal has a certain _aesthetic_ to it that appeals to
@@ -28,6 +28,70 @@ gives it away for free.
 
 More info [on github](https://github.com/chubin/wttr.in)
 
+
+# [dict/dictd](https://github.com/cheusov/dictd): a dictionary is just words ...
+
+All linux repositories have the `dict` program. You just install it and go.
+
+e.g. `sudo dnf install dictd`
+
+This sets up `dict` to use the dictionary server on `dict.org`.
+
+What I really like is that you can set up a local server and point dictd to that
+and download dictionaries locally. 
+
+Sadly this needs a bit of a note because it's gotten harder and harder to get
+this working in offline mode because distributions keep dropping the offline
+dictionary database packages from their releases till you can no longer install
+the `gcide` or `moby-thesaurus` from major distributions.
+
+What you must do is as follows:
+
+1. Install the dictd server e.g. `sudo dnf install dictd-server`
+1. Download the dictionaries (and the index files) that you want from
+   [this shady github repository](https://github.com/ferdnyc/dictd-dicts)
+1. Put the dictionaries and indexes in `/user/share/dict/dictd`
+1. Add a line `server localhost` to `~/.dictrc`
+1. Add the following config to `/etc/dictd.conf`
+
+```
+database gcide {
+  data "/usr/share/dict/dictd/gcide.dict"
+  index "/usr/share/dict/dictd/gcide.index"
+  access { allow * }
+}
+```
+
+Each dictionary needs a section like this
+
+Additionally, on Fedora (which uses SELinux) there is some additional wrangling
+to allowlist the freshly downloaded files.  
+
+
+# [aerc](https://aerc-mail.org/): email like it's 1999
+
+![](aerc-screenshot.png)
+
+[GMX](gmx.com) was the only mail provider I found that
+1. Has **clear** instructions on how to set up an email client using POP/IMAP.
+1. Even sent me a nice email `Subject: Failed access via e-mail program` with
+   detailed instructions on why my attempt to use my third party email client
+   failed.
+
+
+I really like these GMX people!
+
+I _think_ GMail works, but I didn't try it. ProtonMail sadly needs something
+called Protonbridge and a paid subscription to access email from a "third party"
+app.
+
+It is heartening to see, in contrast, that there are so many text mode email
+clients still around ([Pine], [Mutt] and even the [old mail]) and new ones like
+aerc are being developed!
+
+[pine]: https://alpineapp.email/
+[mutt]: http://www.mutt.org/
+[old mail]: https://wiki.archlinux.org/title/S-nail
 
 # delve: Debug Go like it's 1975
 
