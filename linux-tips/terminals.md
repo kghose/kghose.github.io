@@ -20,11 +20,13 @@ Cheatsheet:
 - Fullscreen = ALT + ENTER
 - Go to tab = CTRL + SHIFT + n
 - Open console: CTLR + SHIFT + l
+- `wezterm cli ...`
+
 
 Loves:
 - CTLR + SHIFT + l. It's just not fair to nerd-snipe someone like that.
 - `wezterm cli split-pane` and then you can _drag the split with mouse_
-
+- `wezterm imgcat` 
 
 Likes:
 - There is no title bar, just a tab bar
@@ -33,6 +35,8 @@ Likes:
 Dislikes:
 - GNOME short cuts clash with wezterm defaults
   - F11 for fullscreen does not work
+- wezterm defaults are annoying
+  - MODE + C = copy. On Linux? really?
 
 
 # [GNOME Terminal](https://help.gnome.org/users/gnome-terminal/stable/)
