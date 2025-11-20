@@ -4,6 +4,12 @@ permalink: fascinating-things
 last_modified_at: 2025-09-28
 ---
 
+
+[Someone knows where you WiFi router is](https://wigle.net/) as [do these other
+people](https://beacondb.net/). These site are mentioned in Andrew Moses'
+excellent article [It's your fault my laptop knows where I
+am](https://www.amoses.dev/blog/wifi-location/)
+
 [Don Knuth on ChatGPT (2023)](https://cs.stanford.edu/~knuth/chatGPT20.txt)
 
 
