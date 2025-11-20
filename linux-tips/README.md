@@ -80,9 +80,18 @@ lsblk
 
 CPU details 
 ```
-lscpu
+cat /proc/cpuinfo
+
+
+e.g. Get CPU frequency
+```
+cat /proc/cpuinfo | grep -i mhz
 ```
 
+Thermals:
+```
+cat /sys/class/thermal/thermal_zone*/temp
+```
 
 USB bus details 
 ```
@@ -114,6 +123,12 @@ on the binary.
 ```
 sudo setcap cap_perfmon+ep intel_gpu_top
 ```
+
+Battery
+```
+cat /sys/class/power_supply/BAT0/uevent
+```
+
 
 # Services
 
