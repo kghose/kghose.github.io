@@ -9,7 +9,7 @@ last_modified_at: 2025-11-22
 [GNOME](gnome) \
 [Notes on window managers (Desktops)](desktops) \
 [Notes on terminal emulators](terminals) \
-[Synology](/synology) \
+[Synology](synology) \
 [Bug reports](bug-reports)
 
 * TOC

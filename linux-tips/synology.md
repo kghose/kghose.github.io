@@ -1,6 +1,6 @@
 ---
 title: Synology
-permalink: synology
+permalink: linux-tips/synology
 last_modified_at: 2025-11-22
 ---
 
