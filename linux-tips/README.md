@@ -82,7 +82,7 @@ lsblk
 CPU details 
 ```
 cat /proc/cpuinfo
-
+```
 
 e.g. Get CPU frequency
 ```
