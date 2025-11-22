@@ -1,7 +1,7 @@
 ---
 title: Linux Notes
 permalink: linux-tips/
-last_modified_at: 2025-11-14
+last_modified_at: 2025-11-22
 ---
 
 [Buffers, splits and tabs in Vi](vi-buffers) \
@@ -9,6 +9,7 @@ last_modified_at: 2025-11-14
 [GNOME](gnome) \
 [Notes on window managers (Desktops)](desktops) \
 [Notes on terminal emulators](terminals) \
+[Synology](/synology) \
 [Bug reports](bug-reports)
 
 * TOC
@@ -297,10 +298,6 @@ Connect to "hostname" and determine speed of connection
 iperf3 -c hostname
 ```
 
-
-
-
-
 # Login as different user on a machine and share screen.
 
 Grant "user2" access to your display on the (non-network) local machine 
@@ -480,13 +477,6 @@ Switch to a tab
 ```
 
 Add `setw -g mouse on` in `~/.tmux.conf` to enable scrollback with mouse scroll.
-
-
-# Synology NAS
-
-- Add `https://synocommunity.com/` to Package Sources in Package manager.
-- `mosh` is found in it's own package
-- `tmux` is found in SynoCLI Network Tools
 
 
 # Software I use
