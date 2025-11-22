@@ -563,11 +563,15 @@ Prevent Bluetooth being turned on automatically after wakeups or reboots:
 
 In `/etc/bluetooth/main.conf` set `AutoEnable=false`
 
-# Personal list of software
+# Personal list of indispensible software
 
-1. NeoVim
+1. [wezterm](): Current favorite terminal emulator
+1. NeoVim: Current favorite text editor for code and prose 
 1. pandoc
 1. pdfroff
+1. [mpv](https://mpv.io/): no-nonsense commandline media player (with a minimal
+   console for playing video). Gives excellent informational messages too, like
+   `Displaying cover art. Use --no-audio-display to prevent this.`
 1. firefox
 1. pdfjam
 1. Image Magick
