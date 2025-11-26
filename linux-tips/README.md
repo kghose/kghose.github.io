@@ -63,7 +63,7 @@ edid-decode /sys/class/drm/card0-eDP-1/edid
 
 Memory (RAM) details 
 ```
-sudo lshw -C memory
+sudo dmidecode -t memory
 ```
 
 
@@ -438,10 +438,46 @@ Builtin file explorer: `netrw`
 Refs: [[1](https://www.vim.org/scripts/script.php?script_id=1075)], 
 [[2](https://neovim.io/doc/user/pi_netrw.html)]
 
+## Builtin `vim.pack` plugin manager
 
-## Plugins
-1. Git: [git gutter](https://github.com/airblade/vim-gitgutter)
-2. LSP plugin: [A.L.E](https://github.com/dense-analysis/ale)
+I prefer the built in `vim.pack` plugin manager: less complexity to manage. Just
+`git clone` the plugin into `~/.config/nvim/pack/<org>/start/` where `<org>` is
+some arbitrary name you chose to organize plugins. I use the repo owner's
+handle.
+
+## LSP configuration
+
+NeoVim has a [built in LSP client]! Use [nvim-lspconfig] to get a good default
+configuration (Follow the instructions there to install it). 
+
+Then to your `~/.config/nvim/init.lua` add
+
+```
+vim.lsp.enable('gopls')
+vim.diagnostic.config({ virtual_text = false, virtual_lines = { current_line = true }, })
+```
+The first line enables a particular LSP server, in this case the `golang` server
+`gopls`.
+
+The second line configures how you want the diagnostic messages from the server
+displayed. This particular configuration shows the message as a "popup" line
+when your cursor lands on the line with the error:
+
+![](neovim-lsp-ex1.png)
+
+
+If you instead use 
+
+```
+vim.diagnostic.config({ virtual_text = true, })
+```
+
+The error message is always visible and looks like:
+
+![](neovim-lsp-ex1.png)
+
+[built in LSP client]: https://neovim.io/doc/user/lsp.html
+[nvim-lspconfig]: https://github.com/neovim/nvim-lspconfig
 
 
 ## Configuration notes
