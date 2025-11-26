@@ -438,12 +438,12 @@ Builtin file explorer: `netrw`
 Refs: [[1](https://www.vim.org/scripts/script.php?script_id=1075)], 
 [[2](https://neovim.io/doc/user/pi_netrw.html)]
 
-## Builtin `vim.pack` plugin manager
+## Builtin packages feature 
 
-I prefer the built in `vim.pack` plugin manager: less complexity to manage. Just
-`git clone` the plugin into `~/.config/nvim/pack/<org>/start/` where `<org>` is
-some arbitrary name you chose to organize plugins. I use the repo owner's
-handle.
+I prefer the built in packages feature to any external plugin manager: less
+complexity to manage. Just `git clone` the plugin into
+`~/.config/nvim/pack/<org>/start/` where `<org>` is some arbitrary name you
+chose to organize plugins. I use the repo owner's handle.
 
 ## LSP configuration
 
