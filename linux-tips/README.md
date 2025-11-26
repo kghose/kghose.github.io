@@ -463,7 +463,7 @@ The second line configures how you want the diagnostic messages from the server
 displayed. This particular configuration shows the message as a "popup" line
 when your cursor lands on the line with the error:
 
-![](neovim-lsp-ex1.png)
+![](neovim-lsp-ex2.png)
 
 
 If you instead use 
