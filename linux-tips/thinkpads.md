@@ -5,6 +5,9 @@ layout: page
 last_modified_at: 2025-10-12
 ---
 
+![](/linux-tips/three-thinkpads.jpg)
+
+
 # X220
 
 I have one that was built in 2012. I added an SSD and run Ubuntu on it. You can
