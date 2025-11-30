@@ -94,6 +94,26 @@ Thermals:
 cat /sys/class/thermal/thermal_zone*/temp
 ```
 
+`/sys/class/hwmon`
+
+This is a virtual filesystem interface managed by the Linux kernel's hardware
+monitoring system and carries information about various devices.
+
+You can get a list of names
+```
+cat /sys/class/hwmon/hwmon*/name
+```
+
+On my Thinkpad I have a `thinkpad` entry on `hwmon6`
+
+```
+cat /sys/class/hwmon/hwmon7/fan1_input
+```
+
+The `sensors` utility from the `lm-sensors` package will give nicelt formatted
+system sensor information. 
+
+
 USB bus details 
 ```
 lsusb
