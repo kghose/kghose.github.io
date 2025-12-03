@@ -126,7 +126,7 @@ All in all, I prefer the T14 G1 over the E14 G4 by far. The current plan, when
 the T14 dies, is to replace it with another T14, probably a G6, and keep the E14
 around as the backup.
 
-# Using the track point
+# Using the Trackpoint
 
 There is a joke that no one uses the trackpoint and to be honest it took me over
 a decade to actually try using it. Once I got in some practice, however, I'd say
@@ -141,6 +141,9 @@ comfortable than swiping with two fingers.
 Only the right click is a little awkward (I have to bend my thumb to get to the
 button) but the fact that middle click opens links in a new tab in Firefox means
 I have to use the right click far less often.
+
+The problem now is that when I use my work MacBook my finger often spends a few
+confused seconds looking for the Trackpoint.
 
 # Navigation keys
 
