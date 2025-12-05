@@ -69,6 +69,9 @@ I have the lowest end i5 (Intel) version and it works just fine browsing,
 writing and compiling code. It's also very power thrifty, barely breaking 5W and
 most of the time sitting at 3.5W. 
 
+Power draw during sleep is 0.215 W (7% charge loss over a 15h period, with
+battery 100% charge being 46 Wh)
+
 The fan stays off under the "Power Saver" setting under GNOME, which sets the
 CPU governor to `powersave` which keeps the CPU frequency under 800 MHz.
 
