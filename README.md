@@ -1,11 +1,12 @@
 **Thoughts on generative A.I.**\
 [Philosophical](generative-ai-philosophical) 
 
+**Computery things**\
 [Linux notes](linux-tips)\
 [Thinkpads](thinkpads)\
-[Home projects (and notes)](diy)\
 [Text mode magic](textmode)\
-[Fascinating things](fascinating-things)
 
-{% include blog.html %}
+**[Home projects (and notes)](diy)**
+
+**[Fascinating things](fascinating-things)**
 
