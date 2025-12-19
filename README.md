@@ -1,5 +1,5 @@
-Thoughts in generative A.I.
-- [Philosophical](generative-ai-philosophical) 
+**Thoughts on generative A.I.**\
+[Philosophical](generative-ai-philosophical) 
 
 [Linux notes](linux-tips)\
 [Thinkpads](thinkpads)\
