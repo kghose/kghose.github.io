@@ -5,9 +5,28 @@ last_modified_at: 2025-09-28
 ---
 
 
+[phyphox](phyphox.org) ([code repository](https://github.com/phyphox)) is an
+amazing phone app created by Sebastian Staacks from RWTH Aachen University.
+It taps into your phone's sensors and records the raw data from them. 
+You can even start a server on your phone and access the results over the local
+area network via a browser.
+
+I just ran this "experiment" from my laptop by opening the webpage on a browser
+and clicking run, which ran the experiment on my phone and returned the data
+recorded from it.
+
+![](/assets/images/phyphox-screenshot.png)
+
+So, folks, don't throw those old phones away - strap them onto a bunch of motors
+and arms and build inertially guided robots with them.
+
+---
+
 [Someone knows where you WiFi router is](https://wigle.net/). Site mentioned in
 Andrew Moses' excellent article [It's your fault my laptop knows where I
 am](https://www.amoses.dev/blog/wifi-location/)
+
+---
 
 [Don Knuth on ChatGPT (2023)](https://cs.stanford.edu/~knuth/chatGPT20.txt)
 
