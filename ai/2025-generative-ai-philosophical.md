@@ -1,6 +1,6 @@
 ---
-title: Generative AI (I): Philosophical meanderings
-permalink: generative-ai-philosophical
+title: "Generative AI (I): Philosophical meanderings"
+permalink: /generative-ai-philosophical
 last_modified_at: 2025-12-18
 ---
 
