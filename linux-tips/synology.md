@@ -9,14 +9,16 @@ I have a home server to backup and show our photos. I like the Synology devices
 1. Easy to setup
 1. Reasonably hands off
 1. Low power (The ones I chose)
-1. Run Linux
+1. Run Linux (underneath)
 1. Have the apps I need
 
-The Synology Photos application is adequate, though I've had trouble with the
-system partition filling up due to the image recognition features.
+The Synology Photos application is adequate for backing up photos from our
+iPhones.
 
-The Jellyfin server and front ends are spectacular and run well on Synology.
+The Jellyfin server and front ends (for iPad) are spectacular and the Jellyfin
+server has a distribution for Synology.
 
+Synology can also run Docker, though I have not tried that yet.
 
 # Additional apps
 
@@ -27,10 +29,11 @@ The Jellyfin server and front ends are spectacular and run well on Synology.
 # System partition getting full
 
 This one was a head scratcher. I went to update my system but got the dreaded
-"There is insufficient system capacity for DSM updates." message.
+"There is insufficient system capacity for DSM updates" message.
 
 None of the tips in the linked page in the knowledge center applied to me. 
 
+My system partition was indeed very full,
 ```
 $ df -H
 Filesystem         Size  Used Avail Use% Mounted on
@@ -43,14 +46,15 @@ tmpfs              5.2G   30M  5.2G   1% /tmp
 /dev/loop0          29M  786k   26M   4% /tmp/SynologyAuthService
 /dev/vg1/volume_2  3.0T  2.1T  892G  70% /volume2
 ```
+but with what?
 
-For more detailed break down I tried
+For a more detailed break down I tried
 ```
 sudo du -sh --exclude=volume* /* 2>/dev/null
 ```
 
 The last command excludes the `volume1`,... shared folders that are not part of
-the system partition (*Or so I though.*).
+the system partition (*Or so I thought.*).
 
 I scoured the interwebs and tried some troubleshooting tips.
 
