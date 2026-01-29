@@ -332,6 +332,24 @@ su - user2
 
 # PDFs 
 
+## Resize PDF using ghostscript
+
+```
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
+```
+
+Compression settings are
+
+```
+/screen   = 72dpi
+/ebook    = 150 dpi
+/printer  = 300 dpi
+/prepress = 300 dpi
+```
+
+
+## Stitch files together
+
 Use [pdfjam](https://github.com/pdfjam/pdfjam) for joining files together,
 selecting pages, reducing several source pages onto one output page, etc.,
 
