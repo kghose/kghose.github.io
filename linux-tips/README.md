@@ -335,7 +335,10 @@ su - user2
 ## Resize PDF using ghostscript
 
 ```
-gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=output.pdf input.pdf
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 \
+-dPDFSETTINGS=/ebook \
+-dNOPAUSE -dQUIET -dBATCH \
+-sOutputFile=output.pdf input.pdf
 ```
 
 Compression settings are
