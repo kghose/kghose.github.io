@@ -1,8 +1,10 @@
 **Thoughts on generative A.I.**\
 [Philosophical](generative-ai-philosophical) 
+[LLMs for search](generative-ai-and-search)
 
 **Computery things**\
 [Linux notes](linux-tips)\
+[Photo management](photo-management)\
 [Thinkpads](thinkpads)\
 [Text mode magic](textmode)
 
