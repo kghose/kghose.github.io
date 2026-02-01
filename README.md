@@ -1,6 +1,4 @@
-**Thoughts on generative A.I.**\
-[Philosophical](generative-ai-philosophical)\ 
-[LLMs for search](generative-ai-and-search)
+**[Thoughts on generative A.I.](generative-ai)**
 
 **Computery things**\
 [Linux notes](linux-tips)\
