@@ -150,6 +150,25 @@ Battery
 cat /sys/class/power_supply/BAT0/uevent
 ```
 
+## Don't suspend when closing the lid
+
+In `/usr/lib/systemd/logind.conf`
+
+```
+HandleLidSwitch=ignore
+```
+
+(The original line is commented and shows the default value)
+
+## Make directory tree read only
+
+```
+chmod -R a=rX <dir>
+```
+
+`X` makes execute permissions are only applied to directories, not files.
+
+
 
 # Services
 
