@@ -27,6 +27,10 @@ the machinery operating underneath, which is [Samba](https://www.samba.org/)
 which is an open source
 [SMB](https://en.wikipedia.org/wiki/Server_Message_Block) implementation.
 
+This works absolutely fine when on the graphical desktop and using Nautilus for
+file management, but very cumbersome when trying to access these mounts on the
+command line.
+
 [NFS](https://en.wikipedia.org/wiki/Network_File_System) is the native Linux way
 of sharing directories over a network.
 
