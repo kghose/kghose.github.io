@@ -675,3 +675,30 @@ In `/etc/bluetooth/main.conf` set `AutoEnable=false`
 1. `intel_gpu_top` / nvtop
 1. stylua
 
+# Enabling Wake on LAN
+
+[See the Arch Wiki](https://wiki.archlinux.org/title/Wake-on-LAN)
+
+## On the host
+
+1. There is an easily found BIOS setting that has to be enabled.
+1. Find the name of the ethernet interface with `ip a`. This will also tell you
+   the mac address
+1. Use `sudo ethtool <eth interface name>` to check if `Wake-on: g` is present.
+   `sudo` is needed to see this property.
+   If not set, toggle it to `g`.
+
+## On the client
+
+Once the above steps are done, the host's network card is waiting for a magic
+packet that includes `0xff` repeated six times and the mac address of the
+adapter repeated 16 times.
+
+A crude bash script that works for me (TM) is
+
+```
+MAC="F0:DA:F1:E9:14:E7"  # The mac address
+BCAST="192.168.8.255"  # The broadcast address
+echo -e $(echo $(printf 'f%.0s' {1..12}; printf "$(echo $MAC | sed 's/://g')%.0s" {1..16}) | sed -e 's/../\\x&/g') | nc -w1 -u ${BCAST} 9
+```
+
