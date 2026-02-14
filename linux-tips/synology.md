@@ -20,10 +20,53 @@ server has a distribution for Synology.
 
 Synology can also run Docker, though I have not tried that yet.
 
+# Mount shared folders "traditionally"
+
+I've always used shared Synology folders via Nautilus' interface which hides all
+the machinery operating underneath, which is [Samba](https://www.samba.org/)
+which is an open source
+[SMB](https://en.wikipedia.org/wiki/Server_Message_Block) implementation.
+
+[NFS](https://en.wikipedia.org/wiki/Network_File_System) is the native Linux way
+of sharing directories over a network.
+
+## On Synology (As of DSM 7)
+
+1. Enable NFS in system settings
+1. Add an NFS rule to the shared folder you want
+1. Hostname or IP is the allowlist. I'm within a small in home network and I
+   just do "*". If you are open to the wider world, you need to have more
+   restrictive allowlisting
+1. "Squash" is important. I set it to "Map all users to admin" otherwise I can't
+   get things to mount. I don't know if this is too broad, but it only applies
+   to this directory tree.
+1. If you have firewall enabled on the Synology you'll have to allowlist the NFS
+   server.
+
+## On the client Linux machine
+
+1. Create a directory to mount to. I create it under `/mnt` e.g. `/mnt/my_share`
+1. Use `mount` to mount the network drive
+
+```
+sudo mount -t nfs myserver.local:/my/shared/folder /mnt/my-share
+```
+
 # Additional apps
 
 - [Jellyfin media server](https://jellyfin.org/)
 - [Synology Photos](https://www.synology.com/en-global/dsm/feature/photos)
+
+# Directory permissions 
+
+Synology uses [ACLs](https://wiki.archlinux.org/title/Access_Control_Lists)
+which layer over the traditional Linux file permissions.
+
+NOTE: If your system uses ACLs when you do `ls -al` you will see the character
+"+" at the end of the list of traditional Linux permissions.
+
+To see and set the ACLs on a linux system you can use `getfacl` and `setfacl`.
+On Synology you can use `synoacltool`.
 
 
 # System partition getting full
