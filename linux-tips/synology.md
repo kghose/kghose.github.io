@@ -20,7 +20,7 @@ server has a distribution for Synology.
 
 Synology can also run Docker, though I have not tried that yet.
 
-# Mount shared folders "traditionally"
+# Mount shared folders "traditionally" (2026)
 
 I've always used shared Synology folders via Nautilus' interface which hides all
 the machinery operating underneath, which is [Samba](https://www.samba.org/)
@@ -55,6 +55,17 @@ of sharing directories over a network.
 ```
 sudo mount -t nfs myserver.local:/my/shared/folder /mnt/my-share
 ```
+
+## On client Synology (mounting NFS from one Synology to another)
+
+1. Open "File Station"
+1. Create a shared folder
+1. Create a directory in the shared folder
+1. Go to "Tools" -> "Mount Remote Folder" 
+1. Use the IP address of the other Synology: the mDNS name did not work for me
+   even with several attempts. I set the host Synology's IP as static from the
+   router.
+
 
 # Additional apps
 
