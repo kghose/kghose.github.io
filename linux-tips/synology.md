@@ -18,7 +18,33 @@ iPhones.
 The Jellyfin server and front ends (for iPad) are spectacular and the Jellyfin
 server has a distribution for Synology.
 
-Synology can also run Docker, though I have not tried that yet.
+# Firewall Docker apps
+
+One of the advantages of running apps in Docker on Synology is that you can
+restrict _outbound_ requests. Synology's firewall is really set up to block
+inbound requests to applications, which likely is the most common use case: 
+you trust the applications you are running, but you don't trust the wider
+internet where attacks may come from.
+
+However, you may want to guard against the rare case where an application you are
+running has been compromised and it starts reading your files and sending them
+to some remote server.
+
+Here running under Docker has two safeguards. First you can restrict what
+directories the container has access to (and you can also mount them as
+read-only so the application can't erase or mutilate your data).
+
+Second, you can run the containers over a "Bridge network" that is separate from
+your LAN. This bridge network is just for containers (on Synology it defaults to
+172.17.0.0/24). 
+
+Containers get an IP address in this range and the container manager forwards
+requests from the application via this IP address. You can then set up a
+firewall rule that blocks requests from those IP addresses (or ranges).
+
+Ideally I would like to block/allow outgoing requests TO certain IP addresses
+but I haven't figured out how to do that.
+
 
 # Mount shared folders "traditionally" (2026)
 
