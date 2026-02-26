@@ -22,6 +22,29 @@ troubleshooting and just informational reading about all things Linux.
 
 [arch wiki]: wiki.archlinux.org
 
+## Disable automatic suspend GNOME
+
+From [here](https://discussion.fedoraproject.org/t/gnome-suspends-after-15-minutes-of-user-inactivity-even-on-ac-power/79801)
+
+Add a system config override:
+
+Create a file `sudo vi /etc/dconf/db/gdm.d/01-override-suspend`
+
+With contents
+
+```
+[org/gnome/settings-daemon/plugins/power]
+sleep-inactive-ac-timeout=0
+sleep-inactive-battery-timeout=900
+```
+The "ac" entry disables suspend when plugged in, the "battery" entry suspends in
+900 seconds.
+
+Apply the change with `sudo dconf update`
+
+
+## Misc
+
 Commandline options kernel was started with
 ```
 cat /proc/cmdline
