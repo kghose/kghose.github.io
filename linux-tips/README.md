@@ -22,7 +22,7 @@ troubleshooting and just informational reading about all things Linux.
 
 [arch wiki]: wiki.archlinux.org
 
-## Disable automatic suspend GNOME
+## GNOME: Disable automatic suspend
 
 From [here](https://discussion.fedoraproject.org/t/gnome-suspends-after-15-minutes-of-user-inactivity-even-on-ac-power/79801)
 
@@ -41,6 +41,15 @@ The "ac" entry disables suspend when plugged in, the "battery" entry suspends in
 900 seconds.
 
 Apply the change with `sudo dconf update`
+
+
+## GNOME: Log out graphical session from commandline
+
+`loginctl kill-user <username>`
+
+`sudo service gdm restart`
+
+(A bit of a nuclear option, but worked for me when I couldn't rdp in)
 
 
 ## Misc
