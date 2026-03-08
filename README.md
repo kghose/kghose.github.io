@@ -1,5 +1,6 @@
 **Computery things**\
 **[Thoughts on generative A.I.](generative-ai)**\
+[Bugs I have known](bugs)\
 [Linux notes](linux-tips)\
 [Thinkpads](thinkpads)\
 [Text mode magic](textmode)
