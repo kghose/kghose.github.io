@@ -1,6 +1,6 @@
 ---
 title: "Bugs I have known."
-permalink: bugs
+permalink: bugs/
 layout: page
 ---
 
