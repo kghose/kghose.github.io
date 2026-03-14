@@ -1,7 +1,8 @@
 ---
 title: "Generative AI: Search."
-permalink: /generative-ai-and-search
+permalink: /generative-ai/search
 last_modified_at: 2026-02-01
+layout: page
 ---
 
 Generative AI is the end stage for search that I had not anticipated. 
@@ -47,7 +48,7 @@ engine gave me an accurate list of Intel and ARM micro-architectures that was
 correct. It also didn’t get tripped up by my misuse of "CPU architecture" when I
 meant "CPU micro architecture".
 
-My other question was: "What the last branch record depth was for Cascadelake?"
+My other question was: "What is last branch record depth for Cascadelake?"
 Its answer was "32" and it pointed to Intel's documentation for that processor
 family. I knew this was true of Skylake, and it _seemed_ reasonable for
 Cascadelake not to regress, but I wanted to be _sure_. 
@@ -93,7 +94,7 @@ content we give it for free. That was kind of the social contract with SO and
 YouTube. 
 
 I don't know how this will evolve, but I think it will follow the classic curve
-we've seen with search engines and forumes and code forges: It's free at first,
+we've seen with search engines and forums and code forges: It's free at first,
 then the (new) owners try to make money, they make it terrible, a new  service
 springs up, everyone moves there, and the cycle repeats.
 

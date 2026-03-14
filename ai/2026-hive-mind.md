@@ -1,7 +1,8 @@
 ---
 title: "Generative AI as the Hive Mind."
-permalink: /generative-ai-hive-mind
+permalink: /generative-ai/hive-mind
 last_modified_at: 2026-02-01
+layout: page
 ---
 
 The way I wrap my head around all the Large Language Model stuff (and I toss
