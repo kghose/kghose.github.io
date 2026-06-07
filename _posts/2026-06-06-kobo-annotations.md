@@ -5,12 +5,13 @@ date: 2026-06-06
 tags: kobo 
 ---
 
-Problem: Kobo has an "Export Annotations" function for owned (DRM or non-DRM)
-ebooks but not for borrowed ebooks. I make annotations on all my books and I
-like to refer to them afterwards.
+**Problem**: Kobo has an "Export Annotations" function for owned (DRM or
+non-DRM) ebooks but not for borrowed ebooks. I make annotations on all my books
+and I like to refer to them afterwards.
 
-Solution: It is possible to find the annotations in context and back them up as
-a pdf document of notes as follows (Needs sqlite and ImageMagic installed).
+**Solution**: It is possible to use the data on your Kobo to create a pdf
+document containing all the annotations you have made in a library book using
+the following script (Needs sqlite and ImageMagic installed):
 
 ```
 #!/bin/sh
@@ -42,7 +43,13 @@ trap 'rm -rf "$TEMPD"'  EXIT
 echo "Created temp dir."
 
 PARAM=".param set :bookname %${BOOKNAME}%"
-QUERY="SELECT Bookmark.BookmarkID FROM Bookmark,content WHERE content.ContentID = Bookmark.ContentID AND content.BookTitle LIKE :bookname ORDER BY Bookmark.ChapterProgress"
+QUERY="SELECT \
+Bookmark.BookmarkID \
+FROM Bookmark,content \
+WHERE \
+content.ContentID = Bookmark.ContentID \
+AND content.BookTitle LIKE :bookname \
+ORDER BY Bookmark.ChapterProgress"
 
 BOOKMARK_IDS=$(sqlite3 --readonly -batch -noheader "${KOBODIR}/KoboReader.sqlite" "${PARAM}" "${QUERY};")
 
@@ -59,7 +66,7 @@ magick "$TEMPD/annotation*.jpg" ${OUTFILE}
 ```
 
 There is a quoting issue in the script if `BOOKNAME` contains a `'` that I
-haven't bothered to figure out
+haven't bothered to solve. 
 
 
 ## Details
@@ -132,14 +139,11 @@ and its value on a separate line.
 ## A note on Kobo
 
 The whole database is fun to explore. In general I'm a very big fan of Kobo
-because it is so eminently probable and hackable _for a mainstream device_.
+because it is possible to poke around inside and even hack it. Kobo publishes a
+lot of [open source stuff](https://github.com/kobolabs) and people have
+developed layers on top of the OS (e.g. [NickelMenu]) including a custom reader
+app ([koreader])
 
-I bought very few books on my Kindle because I worried about vendor lock in,
-which turned out to be true: I can't read my Kindle books on my Kobo. I'm sure
-it's there in the fine print somewhere, but Kindle doesn't get my business
-anymore.
-
-Kobo on the other hand at least tries to play with open standards and Adobe
-handles DRM in a way, _in theory_ should allow books bought on Google, for
-example, to work on my Kobo. I think in practice its not so great.
+[NickelMenu]: https://pgaskin.net/NickelMenu/
+[koreader]: https://koreader.rocks/
 
