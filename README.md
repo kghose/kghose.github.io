@@ -1,5 +1,6 @@
 **Computery things**\
 **[Thoughts on generative A.I.](generative-ai)**\
+[Experiments on generative A.I](genai-expt)\
 [Bugs I have known](bugs)\
 [Linux notes](linux-tips)\
 [Thinkpads](thinkpads)\
@@ -13,7 +14,9 @@
 
 {% include blog.html %}
 
-**Alternative search**\
-[https://marginalia-search.com/]\
+**Older internet**\
+[Marginalia search](https://marginalia-search.com/)\
+[Kagi smallweb](https://kagi.com/smallweb)\
+
 [https://ooh.directory/]
 

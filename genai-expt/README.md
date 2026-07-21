@@ -1,0 +1,38 @@
+---
+layout: page
+title: Experiments on generative A.I. 
+permalink: /genai-expt/
+last_modified_at: 20-07-2026
+---
+
+It's about time I got my hands dirty with some _real_ LLM stuff. I mean like
+building little robot(like) things and analyzing their little brains.
+
+It was a thought that struck me at work when I was helping out someone with
+their AI project and they were running some stock LLM or another via their
+laptop and I had scribbled something on the whiteboard and they turned their
+laptop so the webcam could see the whiteboard and, in response to a question,
+the LLM began to read off my whiteboard scrawl (which is even worse than my
+pen-and-paper scrawl) and flawlessly **spoke out** a _summary_ of my list.
+
+I'll be thousands of man-years behind the state-of-the-art but it doesn't
+matter. I just have to understand how these things work, for my own
+satisfaction.
+
+This is going to be a sporadic effort. In my spare time I am ostensibly writing
+a novel - I have been writing it now for ten years, or so it seems - and I want
+to finish that first, so this personal A.I. research thing will be second in
+priority.
+
+## 2026.07.20: What do I want to do?
+
+Take an existing open source model that can do audio and video and build a
+device that can interpret voice and video for expression (e.g. surprize, anger).
+Given the insane cost of hardware, the device will be my laptop rather than some
+AI SBC or MiniPC I was window shopping. But when costs drop ...
+
+Once the device is made, study the model activations and modify them to
+understand LLM computations.
+
+There, that is a suitably vague goal for a home lab experiment.
+
