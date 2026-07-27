@@ -1,6 +1,6 @@
 **Computery things**\
 **[Thoughts on generative A.I.](generative-ai)**\
-[Experiments on generative A.I](genai-expt)\
+[Transparent (A.I) brain project](genai-expt)\
 [Bugs I have known](bugs)\
 [Linux notes](linux-tips)\
 [Thinkpads](thinkpads)\
