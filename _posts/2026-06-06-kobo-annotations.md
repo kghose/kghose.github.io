@@ -11,63 +11,14 @@ and I like to refer to them afterwards.
 
 **Solution**: It is possible to use the data on your Kobo to create a pdf
 document containing all the annotations you have made in a library book using
-the following script (Needs sqlite and ImageMagic installed):
+the following script (Needs Python3 and ImageMagic installed):
 
-```
-#!/bin/sh
-set -x
+(I previously had a Bash version of this script, but decided Python was a better
+glue script. I considered writing this in Golang, but the Golang sqlite library
+situation is complicated while sqlite3 is one of the "batteries included" with
+Python.)
 
-if [[ $# -lt 2 ]]; then
-	echo "Usage: $0 <book name> <outfile>"
-	exit 1
-fi
-
-BOOKNAME=$1
-OUTFILE=$2
-
-KOBODIR="${HOME}/Documents/Kobo-backup/.kobo"
-
-# Create a temporary directory and store its name in a variable.
-TEMPD=$(mktemp -d)
-
-# Exit if the temp directory wasn't created successfully.
-if [ ! -e "$TEMPD" ]; then
-    >&2 echo "Failed to create temp directory"
-    exit 1
-fi
-
-# Make sure the temp directory gets removed on script exit.
-trap "exit 1"           HUP INT PIPE QUIT TERM
-trap 'rm -rf "$TEMPD"'  EXIT
-
-echo "Created temp dir."
-
-PARAM=".param set :bookname %${BOOKNAME}%"
-QUERY="SELECT \
-Bookmark.BookmarkID \
-FROM Bookmark,content \
-WHERE \
-content.ContentID = Bookmark.ContentID \
-AND content.BookTitle LIKE :bookname \
-ORDER BY Bookmark.ChapterProgress"
-
-BOOKMARK_IDS=$(sqlite3 --readonly -batch -noheader "${KOBODIR}/KoboReader.sqlite" "${PARAM}" "${QUERY};")
-
-count=0
-for id in ${BOOKMARK_IDS}
-do
-    idx=$(printf "%04d" $count)
-    echo "Processing page ${idx} of annotations."
-    magick composite -compose multiply "${KOBODIR}/markups/${id}.svg" "${KOBODIR}/markups/${id}.jpg" $TEMPD/annotation-${idx}.jpg
-    count=$((count+1))
-done
-
-magick "$TEMPD/annotation*.jpg" ${OUTFILE} 
-```
-
-There is a quoting issue in the script if `BOOKNAME` contains a `'` that I
-haven't bothered to solve. 
-
+<script src="https://gist.github.com/kghose/8327d0fe35a770c6632e6ba903cff4f8.js"></script>
 
 ## Details
 
@@ -120,14 +71,17 @@ The following query will get us all the bookmark IDs for annotations for a given
 book
 
 ```
-SELECT 
- Bookmark.BookmarkID 
-FROM Bookmark,content 
+SELECT Bookmark.BookmarkID FROM Bookmark, content
 WHERE 
- content.ContentID = Bookmark.ContentID 
- AND content.BookTitle LIKE '%<my book>%' 
-ORDER BY Bookmark.ChapterProgress
+  content.ContentID = Bookmark.ContentID
+  AND (Type='markup' OR Type='highlight' OR Type='note')
+  AND content.BookTitle LIKE ? 
+ORDER BY content.VolumeIndex ASC, Bookmark.ChapterProgress ASC
 ```
+
+The thing I found confusing was how to sort the annotations in page order.
+`ChapterProgress`orders the annotations within a chapter, and
+`content.VolumeIndex` _seems_ to order by chapter. 
 
 
 ## Notes on exploring sqlite databases
