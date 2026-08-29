@@ -3,8 +3,9 @@
 [Home projects (and notes)](diy)\
 [Other people's cool stories, demos and websites](fascinating-things)
 
-**Notes**
+**Articles**
 
+[The Marvellous Bee odometer](articles/bee-odometer)\
 [Thoughts on generative A.I.](generative-ai)\
 <!-- [Transparent (A.I) brain project](genai-expt)\ -->
 [Bugs I have known](bugs)\
