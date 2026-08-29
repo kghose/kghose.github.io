@@ -5,18 +5,10 @@ permalink: /computer-projects/
 last_modified_at: 28-08-2026
 ---
 
-[Moulick: A prime number toy](moulick)
+(2017 Sept) [Moulick: A prime number toy running on an Arduino](moulick)
+
+<iframe width="500" height="315" src="https://www.youtube.com/embed/VL-EnUDCtP4?si=E-_pvqiJWpGUQTlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-
-## Physics simulations
-
-2026.08.28 - Discovered [Project Chrono](http://projectchrono.org/). It
-configures and compiles with no fuss. Just had to install `eigen3` and
-`irrlicht` which were available on the Fedora repos. The demos work excellently,
-so will go ahead and see if I can code up the two simulations rattling inside my
-head.
-
-- Lopsided spaceship
-- Disintegrating asteroid
+(2026 Aug - ) [Physics simulations](physics)
 
