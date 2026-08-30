@@ -106,6 +106,9 @@ It's a step up from searching for the error message string and piecing together
 the root cause because the A.I. brings to bear a lot more context (e.g. the code
 base) and is able to try out solutions as well by itself. 
 
+(_2026.08.30 update: The AI at work can identify C++ memory allocation errors,
+explain what I did wrong and suggest how to refactor the code to be idiomatic.
+The AI has gotten very good at the analytic part as well._)
 
 ### Writing test cases
 
