@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: page
 title: DIY Kobo annotation backup 
+permalink: /computer-projects/kobo-annotations 
 date: 2026-06-06
-tags: kobo 
+tags: kobo
 ---
 
 **Problem**: Kobo has an "Export Annotations" function for owned (DRM or

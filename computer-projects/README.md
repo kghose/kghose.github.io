@@ -12,3 +12,4 @@ last_modified_at: 28-08-2026
 
 (2026 Aug - ) [Physics simulations](physics)
 
+(2026 Jun) [Exporting Kobo annotations](kobo-annotations)
