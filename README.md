@@ -23,7 +23,7 @@ _(If there is no link, it means I'm still working on the article, sorry ...)_
 1. Deducing how bee odometers work
 1. Geometric proof of the Pythagorean theorem
 1. Cantor's diagonal argument
-1. Proof that there are infinitely many prime numbers
+1. [Proof that there are infinitely many prime numbers](elegant/infinite-primes)
 
 ## Misc
 
