@@ -8,11 +8,13 @@
 
 # Articles
 
+_(This section is bot a list of topics I have written about and a list I would
+like to, eventually, write about. If there is no link, it means I'm still
+working on the article, sorry.)_
+
 ## Elegant inferences
 Experiments, interpretations of experiments and mathematical theorems that I
 thought have the genius of simplicity or great insight.
-
-_(If there is no link, it means I'm still working on the article, sorry ...)_
 
 1. Inferring ionic channel function during an action potential
 1. Measuring the speed of light
