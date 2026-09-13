@@ -8,7 +8,7 @@
 
 # Articles
 
-_(This section is bot a list of topics I have written about and a list I would
+_(This section is both a list of topics I have written about and a list I would
 like to, eventually, write about. If there is no link, it means I'm still
 working on the article, sorry.)_
 
@@ -27,10 +27,21 @@ thought have the genius of simplicity or great insight.
 1. Cantor's diagonal argument
 1. [Proof that there are infinitely many prime numbers](elegant/infinite-primes)
 
+
+## Computing
+
+1. [Thoughts on generative A.I.](generative-ai)
+1. Generative AI and compression
+
+
+
+## Science
+
+1. [The Marvellous Bee odometer (2017)](articles/bee-odometer)
+
+
 ## Misc
 
-[The Marvellous Bee odometer (2017)](articles/bee-odometer)\
-[Thoughts on generative A.I.](generative-ai)\
 <!-- [Transparent (A.I) brain project](genai-expt)\ -->
 <!-- [Bugs I have known](bugs)\ -->
 [Linux notes](linux-tips)\
