@@ -130,6 +130,11 @@ fun out of it.
 
 For this reason, Gen AI is not a good use case for my writing. 
 
+(_Update 13.09.2026: The A.I. has gotten much better at analyzing issues and
+writing them up. I now find it effective to take the A.I. generated analysis and
+edit it for tone and structure. Because of my personality this exercise also
+internalizes my understanding of the issue better than just reading it._)
+
 I don't use AI for **generating whole files**. As an experiment I did use it to
 create a bash script. I was impressed enough by the result, but ran into the
 80/20 problem. The 80/20 problem is that I could get 80% of the job done with my
