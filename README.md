@@ -31,8 +31,8 @@ thought have the genius of simplicity or great insight.
 ## Computing
 
 1. [Thoughts on generative A.I.](generative-ai)
+1. [AI and the law](ai-law)
 1. Generative AI and compression
-
 
 
 ## Science
