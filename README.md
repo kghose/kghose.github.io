@@ -35,8 +35,9 @@ thought have the genius of simplicity or great insight.
 1. Generative AI and compression
 
 
-## Science
+## Science / Mathematics
 
+1. [Squishy squares](squishy-squares)
 1. [The Marvellous Bee odometer (2017)](articles/bee-odometer)
 
 
