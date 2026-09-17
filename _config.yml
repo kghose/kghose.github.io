@@ -3,3 +3,4 @@ description: There was never any fire but here are the notes.
 
 kramdown:
   auto_ids: true
+  math_engine: mathjax
