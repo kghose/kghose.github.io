@@ -28,23 +28,20 @@ thought have the genius of simplicity or great insight.
 1. [Proof that there are infinitely many prime numbers](elegant/infinite-primes)
 
 
-## Computing
+## Science / Mathematics / Computers
 
-1. [Thoughts on generative A.I.](generative-ai)
-1. [AI and the law](ai-law)
 1. Generative AI and compression
-
-
-## Science / Mathematics
-
 1. Squishy squares [1](squishy-squares), [2](squishy-squares2)
-1. [The Marvellous Bee odometer (2017)](articles/bee-odometer)
+1. [The Marvellous Bee odometer)](articles/bee-odometer)
 
+
+## Opinions
+
+1. [AI and the law](ai-law)
+1. [Thoughts on generative A.I.](generative-ai)
 
 ## Misc
 
-<!-- [Transparent (A.I) brain project](genai-expt)\ -->
-<!-- [Bugs I have known](bugs)\ -->
 [Linux notes](linux-tips)\
 [Thinkpads](thinkpads)\
 [Text mode magic](textmode)
