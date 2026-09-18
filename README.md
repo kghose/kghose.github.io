@@ -24,7 +24,7 @@ thought have the genius of simplicity or great insight.
 1. The speed of light and magnetism
 1. Deducing how bee odometers work
 1. Geometric proof of the Pythagorean theorem
-1. Cantor's diagonal argument
+1. [Beyond infinity (Cantor's diagonal argument)](elegant/cantor-diagonal)
 1. [Proof that there are infinitely many prime numbers](elegant/infinite-primes)
 
 
