@@ -33,11 +33,11 @@ thought have the genius of simplicity or great insight.
 1. [AI and the law](ai-law)
 1. [Thoughts on generative A.I.](generative-ai)
 
-# Misc
+# Grab-bag of computer stuff 
 
-[Linux notes](linux-tips)\
-[Thinkpads](thinkpads)\
-[Text mode magic](textmode)
+1. [Linux notes](linux-tips)
+1. [Thinkpads](thinkpads)
+1. [Text mode magic](textmode)
 
 
 # Links
