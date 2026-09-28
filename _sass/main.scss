@@ -1,5 +1,5 @@
 body {
-  font-family: Roboto;
+  font-family: system-ui;
   max-width: 500px;
   margin: 0 auto; // Center the content
   padding-left: 1em;
@@ -37,6 +37,7 @@ body {
   text-align: right;
 }
 
+h1 { font-size: 1.3rem; }
 
 img { 
   max-width: 99%;
