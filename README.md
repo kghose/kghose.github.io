@@ -15,7 +15,7 @@ thought have the genius of simplicity or great insight.
 
 # Science / Mathematics / Computers
 
-1. Generative AI and compression
+1. [AI text watermarking](articles/ai-text-watermarking)
 1. [Part 1](squishy-squares), [Part 2](squishy-squares2) of Squishy squares: A mathematical curiosity
 1. [The Marvellous Bee odometer](articles/bee-odometer)
 
