@@ -11,14 +11,6 @@ thought have the genius of simplicity or great insight.
 
 1. [Beyond infinity (Cantor's diagonal argument)](elegant/cantor-diagonal)
 1. [Proof that there are infinitely many prime numbers](elegant/infinite-primes)
-1. Inferring ionic channel function during an action potential
-1. Measuring the speed of light
-1. Measuring the radius of the Earth
-1. Inferring where we are in the galaxy
-1. Inferring the shape of our galaxy
-1. The speed of light and magnetism
-1. Deducing how bee odometers work
-1. Geometric proof of the Pythagorean theorem
 
 
 # Science / Mathematics / Computers
@@ -39,12 +31,27 @@ thought have the genius of simplicity or great insight.
 1. [Thinkpads](thinkpads)
 1. [Text mode magic](textmode)
 
-
 # Links
 
-[Other people's cool stories, demos and websites](fascinating-things)
+1. [Other people's cool stories, demos and websites](fascinating-things)
+1. [Marginalia search](https://marginalia-search.com/)
+1. [Kagi smallweb](https://kagi.com/smallweb)
+1. [ooh.directory](https://ooh.directory/)
 
-[Marginalia search](https://marginalia-search.com/)\
-[Kagi smallweb](https://kagi.com/smallweb)\
-[ooh.directory](https://ooh.directory/)
+
+# Backlog
+
+_(Things I'd like to learn and write about)_
+
+1. Holographic universe (Physics)
+1. Generative AI and compression
+1. Inferring ionic channel function during an action potential
+1. Measuring the speed of light
+1. Measuring the radius of the Earth
+1. Inferring where we are in the galaxy
+1. Inferring the shape of our galaxy
+1. The speed of light and magnetism
+1. Deducing how bee odometers work
+1. Geometric proof of the Pythagorean theorem
+
 
