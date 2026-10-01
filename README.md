@@ -2,8 +2,8 @@
 
 # Projects
 
-[Computery projects (finished or not)](computer-projects)\
-[Home projects (and notes)](diy)
+1. [Computery projects (finished or not)](computer-projects)
+1. [Home projects (and notes)](diy)
 
 # Elegant inferences
 Experiments, interpretations of experiments and mathematical theorems that I
