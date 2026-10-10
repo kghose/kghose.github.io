@@ -34,6 +34,9 @@ thought have the genius of simplicity or great insight.
 # Links
 
 1. [Other people's cool stories, demos and websites](fascinating-things)
+1. [Ken Shirriff's blog](https://www.righto.com/) - He does a lot of teardowns
+   of old electronics, often under a microscope and lots of other vintage
+   computer stuff.
 1. [Marginalia search](https://marginalia-search.com/)
 1. [Kagi smallweb](https://kagi.com/smallweb)
 1. [ooh.directory](https://ooh.directory/)
